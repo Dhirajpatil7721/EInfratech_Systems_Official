@@ -1,0 +1,26 @@
+.hero-section {
+    background: linear-gradient(135deg, #b4f6ec, #eeebe6);
+  }
+  
+  .btn-hover {
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-hover:hover {
+    transform: scale(1.1);
+  }
+  
+  .feature-card, .solution-card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+  }
+  .feature-card:hover, .solution-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  

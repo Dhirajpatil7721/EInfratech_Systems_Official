@@ -1,0 +1,174 @@
+.contact {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #e6f0fa 0%, #dbeafe 100%); /* Gradient background */
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #1e40af;
+  transition: color 0.3s ease; /* Hover transition for title */
+}
+
+.section-title h2:hover {
+  color: #3b82f6; /* Lighter blue on hover */
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #007bff, #60a5fa);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease; /* Animate underline width */
+}
+
+.section-title h2:hover::after {
+  width: 80px; /* Expands on hover */
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.info-item {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); /* Subtle gradient */
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.info-item i {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Icon hover effects */
+}
+
+.info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1e40af;
+  transition: color 0.3s ease; /* Title hover effect */
+}
+
+.info-item p {
+  margin-bottom: 0;
+  color: #6b7280;
+}
+
+.info-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+  background: linear-gradient(145deg, #f0f7ff 0%, #e6f0fa 100%); /* Gradient change on hover */
+}
+
+.info-item:hover i {
+  transform: scale(1.1); /* Slight icon zoom */
+  color: #60a5fa; /* Lighter blue */
+}
+
+.info-item:hover h3 {
+  color: #2563eb; /* Brighter blue on hover */
+}
+
+.php-email-form {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); /* Subtle gradient */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.php-email-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+  background: linear-gradient(145deg, #f0f7ff 0%, #e6f0fa 100%); /* Gradient change on hover */
+}
+
+.form-control {
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Hover for inputs */
+}
+
+.form-control:hover {
+  border-color: #93c5fd; /* Light blue border on hover */
+}
+
+.form-control:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25);
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.php-email-form button[type="submit"] {
+  background: linear-gradient(to right, #007bff, #3b82f6);
+  border: 0;
+  padding: 12px 35px;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+
+.php-email-form button[type="submit"]:hover {
+  background: linear-gradient(to right, #2563eb, #60a5fa); /* Brighter gradient */
+  transform: translateY(-3px); /* More pronounced lift */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Button shadow */
+}
+
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+}
+
+.loading.active {
+  display: block;
+  color: #007bff;
+}
+
+.error-message.active {
+  display: block;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.sent-message.active {
+  display: block;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .info-item {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title h2 {
+      font-size: 28px;
+  }
+}
