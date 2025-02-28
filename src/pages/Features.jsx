@@ -90,21 +90,23 @@ function Features() {
                        
                         <div className="row align-items-center gy-4">
                          
-                            <div className="col-lg-6 col-md-12 text-center img-hover-zoom" data-aos="fade-up" data-aos-delay="100">
+                            <div style={{width:"40%",height:"20%"}} className="col-lg-6 col-md-12 text-center img-hover-zoom" data-aos="fade-up" data-aos-delay="100">
                                 <img src="/images/features-1.jpg" className="img-fluid rounded shadow-lg" alt="Feature 1" style={{ maxWidth: "90%", height: "auto" }} />
                             </div>
+                            
 
                         
                             <div className="col-lg-6 col-md-12 text-lg-start text-center" data-aos="fade-up" data-aos-delay="200">
                                 <div className="content px-3" style={{ maxWidth: "100%" }}>
-                                    <h3 className="fw-bold fs-2">Enhancing Workplace Efficiency with Innovation</h3>
+                                    <h3 className="">Enhancing Workplace Efficiency with Innovation</h3>
                                     <p
-                                        className="fs-5"
+                                        className=""
                                         style={{
                                             maxWidth: "100%",
+                                            // fontSize: "1rem",
                                             overflowWrap: "break-word",
                                             wordBreak: "break-word",
-                                            lineHeight: "1.6",
+                                            // lineHeight: "1.6",
                                             textAlign: "justify"
                                         }}
                                     >
@@ -117,7 +119,8 @@ function Features() {
                                         href="#"
                                         className="btn btn-primary text-white px-4 py-2 fw-bold"
                                         style={{
-                                           fontSize: "1.2rem"
+                                        //    fontSize: "1.2rem",
+                                           marginTop:"27px"
                                         }}
                                     >
                                         Discover More
@@ -128,27 +131,28 @@ function Features() {
                         </div>
 
                   
-                        <div className="row align-items-center gy-4 mt-5">
+                        <div className="row gy-4 mt-5">
                         
                             <div className="col-lg-6 col-md-12 text-lg-start text-center order-lg-1 order-2" data-aos="fade-up" data-aos-delay="100">
-                                <div className="content px-3" style={{ maxWidth: "100%" }}>
-                                    <h3 className="fw-bold fs-2">Smart Workplace Solutions for Enhanced Efficiency</h3>
-                                    <p className="fs-5"  >
+                                <div className="content px-3" style={{ maxWidth: "100%"}}>
+                                    <h3 className="">Smart Workplace Solutions for Enhanced Efficiency</h3>
+                                    <p className="">
                                         Leverage advanced technology to transform your workplace.
                                         Our innovative solutions provide real-time insights, enhance
                                         operational efficiency, and reduce costs. Automate
                                         processes, improve decision-making, and create a more
-                                        productive work environment.
+                                        productive work environment.Gain instant access to crucial 
+                                        data.
                                     </p>
-                                    <a href="#" className="btn btn-primary text-white px-4 py-2 fw-bold" style={{  fontSize: "1.2rem" }}>
-                                        Discover More
+                                    <a href="#" style={{marginTop:"20px"}} className="btn btn-primary text-white px-4 py-2 ">
+                                        Discover More  
                                     </a>
                                 </div>
                             </div>
 
                          
                             <div className="col-lg-6 col-md-12 text-center order-lg-2 order-1 img-hover-zoom" data-aos="fade-up" data-aos-delay="200">
-                                <img src="/images/features-2.jpg" className="img-fluid rounded shadow-lg" alt="Feature 2" style={{ maxWidth: "90%", height: "auto" }} />
+                                <img src="/images/features-2.jpg" className="img-fluid rounded shadow-lg" alt="Feature 2" style={{ width: "90%", height: "80%" }} />
                             </div>
                         </div>
                     </div>

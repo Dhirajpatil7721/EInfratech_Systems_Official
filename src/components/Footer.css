@@ -30,3 +30,14 @@
 .credits a:hover {
     color: #388da8 !important;
 }
+
+.social-icon {
+    color: #3D4348;
+    border: 1px solid black;
+    padding: 7px 11px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

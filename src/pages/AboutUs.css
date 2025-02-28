@@ -1,231 +1,197 @@
-
 .about-us-container {
-    font-family: Montserrat , sans-serif;
-    width: 100%; 
-    margin: 0;
-    padding: 0;
-    background-image: url('./images/aboutus1.jpg'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-    position: relative;
-    color: #333;
-    filter: brightness(90%); }
-  
-  /* Who We Are Section (no overlay, content directly over background) */
+  font-family: Montserrat, sans-serif;
+  width: 100%; /* Full width to extend left and right */
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/aboutus1.jpg'); /* Replace with your actual image path */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full viewport height */
+  position: relative;
+  color: #333;
+  filter: brightness(90%); /* Slightly darker for contrast, as per your design */
+}
+
+/* Who We Are Section (left-aligned content) */
+.about-us-overlay {
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white overlay for readability */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px; /* Default padding for desktop */
+  min-height: auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: left; /* Align items to the left */
+  justify-content: left; /* Justify content to the left */
+}
+
+.about-us-content-container {
+  background: transparent;
+  padding: 50px; /* Default padding for desktop */
+  max-width: 500px; /* Default max-width for desktop */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-content-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-content-container h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.about-us-content-container p {
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Ensure responsiveness for large screens */
+@media (min-width: 1200px) {
   .about-us-overlay {
-    max-width: 1800px; 
-    margin: 0 auto;
-    padding: 40px; 
-    min-height: auto; 
-    position: relative;
-    z-index: 2;
-     display: flex;
-    align-items: left; 
-    justify-content: left; 
-  }
-  
-  /* Container for the content within the overlay (no background, transparent) */
-  .about-us-content-container {
-    background: transparent; 
-    padding: 50px; 
-    max-width: 500px; 
-    text-align: left; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  }
-  
-  /* Hover effect for the content container (optional, for interactivity) */
-  .about-us-content-container:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
-  }
-  
-  /* Styling for the "Who We Are" heading */
-  .about-us-content-container h1 {
-    font-size: 3em; 
-    font-weight: bold;
-    color: #333; 
-    margin-bottom: 30px; 
-    text-transform: uppercase; 
-  }
-  
-  /* Styling for content (paragraphs, etc.) inside the container */
-  .about-us-content-container p {
-    font-size: 1.4em; 
-    line-height: 1.4; 
-    color: #444; 
-    font-weight: 500; 
-  }
-  
-  /* Ensure responsiveness for large screens */
-  @media (min-width: 1200px) {
-    .about-us-overlay {
-      padding: 60px; 
-    }
-  
-    .about-us-content-container {
-      padding: 60px; 
-      max-width: 1000px; 
-    }
-  }
-  
-  /* Optional: Adjust for smaller screens */
-  @media (max-width: 768px) {
-    .about-us-overlay {
-      max-width: 100%; 
-      padding: 20px; 
-    }
-  
-    .about-us-content-container {
-      max-width: 100%; 
-      padding: 20px; 
-      margin: 0 10px; 
-    }
-  
-    .about-us-content-container:hover {
-      transform: scale(1.01); 
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    }
-  
-    .about-us-content-container h1 {
-      font-size: 2em; 
-      margin-bottom: 15px; 
-    }
-  
-    .about-us-content-container p {
-      font-size: 1em; 
-      line-height: 1.6; 
-    }
-  }
-  
-  /* Stats Bar Section with Counter Animation */
-  .stats-bar {
-    background-color: #003366; 
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    z-index: 3; 
-    overflow: hidden;
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-  }
-  
-  .counter-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 200%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0; 
-  }
-  
-  .counter-item {
-    text-align: center;
-    flex: 1;
-    max-width: 33.33%; 
-    padding: 0 10px; 
-    opacity: 0; 
-    animation: countUp 1s ease-out forwards; 
-    animation-delay: calc(var(--order) * 0.5s); 
-  }
-  
-  .number {
-    font-size: 75px;
-    font-weight: bold;
-    color: white; 
-    display: block;
-    transition: color 0.3s ease; 
-    position: relative; 
-  }
-  
-  .number::after {
-    content: '+';
-    color: #ff9900;
-    margin-left: 5px;
-  }
-  
-  .label {
-    font-size: 18px;
-    color: #cccccc; 
-    display: block;
-    margin-top: 5px; 
-  }
-  
-  /* Animation for fading in the stats items */
-  @keyframes countUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); 
-    }
-  }
-  
-  /* Ensure animation resets on page load */
-  .counter-item {
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-  }
-  
-  /* Responsiveness for the stats bar */
-  @media (max-width: 768px) {
-    .stats-bar {
-      flex-direction: column; 
-      padding: 15px 0; 
-    }
-  
-    .counter-container {
-      flex-direction: column; 
-    }
-  
-    .counter-item {
-      width: 100%; 
-      max-width: 100%; 
-      margin-bottom: 15px; 
-      padding: 0 5px; 
-      animation-delay: 0s;
-    }
-  
-    .number {
-      font-size: 32px; 
-    }
-  
-    .label {
-      font-size: 16px; 
-    }
+    padding: 60px; /* Increased padding for larger screens */
   }
 
-  .offices-section {
-  background-color: #f5f7fa; 
+  .about-us-content-container {
+    padding: 60px; /* Increased padding for larger screens */
+    max-width: 1000px; /* Wider content on large screens */
+  }
+}
+
+/* Improved mobile responsiveness (below 768px) */
+@media (max-width: 768px) {
+  .about-us-overlay {
+    max-width: 100%; /* Full width on mobile */
+    padding: 15px; /* Reduced padding on mobile */
+    justify-content: center; /* Center content on mobile for better usability */
+    align-items: flex-start; /* Align to top on mobile */
+  }
+
+  .about-us-content-container {
+    max-width: 100%; /* Full width on mobile */
+    padding: 15px; /* Reduced padding on mobile */
+    margin: 0 10px; /* Small margins on mobile */
+    text-align: center; /* Center text on mobile for readability */
+  }
+
+  .about-us-content-container:hover {
+    transform: scale(1.01); /* Subtle hover effect on mobile */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow on mobile */
+  }
+
+  .about-us-content-container h1 {
+    font-size: 1.8em; /* Smaller heading on mobile */
+    margin-bottom: 15px; /* Reduced margin on mobile */
+  }
+
+  .about-us-content-container p {
+    font-size: 1em; /* Smaller text on mobile */
+    line-height: 1.6; /* Increased line height for readability */
+  }
+}
+
+/* Stats Bar Section (static, no animation) */
+.stats-bar {
+  background-color: #003366; /* Dark blue background from the screenshot */
   width: 100%;
-  padding: 60px 20px; 
-  margin-top: 40px; 
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  z-index: 3; /* Ensures it stays above the background */
+  overflow: hidden; /* Ensures content stays within bounds */
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-around; /* Evenly space the items horizontally on desktop */
+  align-items: center; /* Vertically center the items */
+}
+
+.stats-item {
+  flex: 1; /* Allows each item to take equal space */
+  color: #fff; /* White text for contrast */
+  max-width: 33.33%; /* Limits each item to one-third of the container */
+  padding: 0 10px; /* Add horizontal padding for better spacing, matching the image */
+}
+
+.number {
+  font-size: 48px; /* Match the exact size from the image */
+  font-weight: bold;
+  color: #fff; /* White for numbers, matching the screenshot */
+  display: block;
+  line-height: 1; /* Ensure the number and "+" are tightly aligned vertically, matching the image */
+  font-family: Arial, sans-serif; /* Match the font from the image */
+}
+
+.number::after {
+  content: '+';
+  color: #ff9900; /* Orange for the "+" sign, matching the screenshot */
+  margin-left: 5px; /* Small space between number and "+", matching the image */
+}
+
+.label {
+  font-size: 18px; /* Match the exact size from the image */
+  color: #cccccc; /* Lighter gray for labels, matching the screenshot */
+  display: block;
+  margin-top: 5px; /* Add space between the number and label, matching the image */
+  font-family: Arial, sans-serif; /* Match the font from the image */
+}
+
+/* Responsiveness for the stats bar */
+@media (max-width: 768px) {
+  .stats-bar {
+    flex-direction: column; /* Stack items vertically on mobile, top to bottom */
+    padding: 15px 0; /* Reduce padding on mobile */
+  }
+
+  .stats-item {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Override max-width on mobile */
+    margin-bottom: 15px; /* Space between stacked items */
+    padding: 0 5px; /* Reduce padding on mobile */
+  }
+
+  .number {
+    font-size: 32px; /* Smaller numbers on mobile */
+  }
+
+  .label {
+    font-size: 16px; /* Smaller text on mobile */
+  }
+}
+
+/* Offices Section */
+.offices-section {
+  background-color: #f5f7fa; /* Light gray background */
+  width: 100%;
+  padding: 60px 20px; /* Default padding for desktop */
+  margin-top: 40px; /* Space above the section */
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
 .offices-header-container {
-  background-color: #afc1d3; 
+  background-color: #afc1d3; /* Light blue header background */
   padding: 20px 0;
-  margin-bottom: 40px; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 40px; /* Space below header */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .offices-header {
-  font-size: 2.5em; 
+  font-size: 2.5em; /* Default size for desktop */
   font-weight: bold;
-  color: #333; 
-  margin: 0; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .offices-grid {
@@ -233,162 +199,164 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: auto auto; 
+  margin: 0 auto 0 50px; /* Shift right by 50px, keeping bottom auto for vertical centering */
   padding: 0 10px;
-  transform: translateX(50px); 
+  transform: translateX(0); /* Reset transform if not needed after margin adjustment */
 }
 
 .office-card {
-  background-color: #ffffff; 
-  border-radius: 8px; 
-  width: 300px; 
-  height: auto; 
+  background-color: #ffffff; /* White card background */
+  border-radius: 8px;
+  width: 300px; /* Default width for desktop */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  justify-content: flex-start;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .office-card:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); /* Slight scale on hover for desktop */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .office-image {
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover; 
-  border-radius: 50% 50% 0 0; 
-  margin-bottom: 20px; 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50% 50% 0 0; /* Circular top corners */
+  margin-bottom: 20px;
 }
 
 .office-details {
-  text-align: left; 
-  padding: 10px 20px 20px; 
-  width: 100%; 
+  text-align: left;
+  padding: 10px 20px 20px; /* Default padding for desktop */
+  width: 100%;
 }
 
 .office-company {
-  font-size: 0.9em; 
-  font-weight: normal; 
-  color: #333; 
-  margin-bottom: 5px; 
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .office-country {
-  font-size: 1.5em; 
-  font-weight: bold; 
-  color: #333; 
-  font-style: normal; 
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  font-style: normal;
 }
 
-/* Responsiveness for the offices section */
+/* Responsiveness for the offices section (enhanced for mobile) */
 @media (max-width: 768px) {
   .offices-section {
-    padding: 30px 10px; 
+    padding: 30px 10px; /* Reduced padding on mobile */
   }
 
   .offices-header-container {
     padding: 15px 0;
-    margin-bottom: 20px; 
+    margin-bottom: 20px; /* Reduced margin on mobile */
   }
 
   .offices-header {
-    font-size: 2em; 
+    font-size: 1.8em; /* Smaller heading on mobile */
   }
 
   .offices-grid {
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px; /* Reduced gap on mobile */
+    margin: 0 auto; /* Center the grid on mobile */
+    transform: translateX(0); /* Reset right shift on mobile for full centering */
   }
 
   .office-card {
-    width: 250px; 
-    margin: 0 auto; 
+    width: 250px; /* Smaller card width on mobile */
+    margin: 0 auto; /* Center cards on mobile */
   }
 
   .office-card:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.02); /* Subtle hover effect on mobile */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow on mobile hover */
   }
 
   .office-image {
-    height: 150px; 
+    height: 150px; /* Smaller image height on mobile */
   }
 
   .office-details {
-    padding: 10px 15px; 
+    padding: 10px 15px; /* Reduced padding on mobile */
   }
 
   .office-company {
-    font-size: 0.8em; 
+    font-size: 0.8em; /* Smaller company text on mobile */
   }
 
   .office-country {
-    font-size: 1.1em; 
+    font-size: 1.1em; /* Smaller country text on mobile */
   }
 }
 
 /* Our Investors Section */
 .investors-section {
-  background-color: #ffffff; 
+  background-color: #ffffff; /* White background */
   width: 100%;
-  padding: 60px 20px; 
-  margin-top: 40px; 
-  margin-bottom: 0; 
+  padding: 60px 20px; /* Default padding for desktop */
+  margin-top: 40px; /* Space above the section */
+  margin-bottom: 0; /* No bottom margin to remove excess space */
   position: relative;
   z-index: 1;
   text-align: center;
 }
 
 .investors-header {
-  font-size: 2.5em; 
+  font-size: 2.5em; /* Default size for desktop */
   font-weight: bold;
-  color: #333; 
-  margin-bottom: 40px; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
+  color: #333;
+  margin-bottom: 40px; /* Space below header */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .investors-grid {
-  display: flex; 
-  justify-content: center; 
-  gap: 50px; 
-  max-width: 1200px; 
-  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Default gap for desktop */
+  max-width: 1200px;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
 .investor-logo {
-  width: 150px; 
+  width: 150px; /* Default logo width for desktop */
   height: auto;
-  filter: grayscale(100%) opacity(70%); 
-  transition: filter 0.3s ease, transform 0.3s ease; 
+  filter: grayscale(100%) opacity(70%);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .investor-logo:hover {
   filter: grayscale(0%) opacity(100%);
-  transform: scale(1.1); 
+  transform: scale(1.1); /* Slight scale on hover for desktop */
 }
 
-/* Responsiveness for the investors section */
+/* Responsiveness for the investors section (enhanced for mobile) */
 @media (max-width: 768px) {
   .investors-section {
-    padding: 30px 10px; 
+    padding: 30px 10px; /* Reduced padding on mobile */
   }
 
   .investors-header {
-    font-size: 2em; 
-    margin-bottom: 20px; 
+    font-size: 1.8em; /* Smaller heading on mobile */
+    margin-bottom: 20px; /* Reduced margin on mobile */
   }
 
   .investors-grid {
-    gap: 30px; /* Reduced gap on mobile */
-    flex-direction: column; 
-    align-items: center; 
+    gap: 20px; /* Reduced gap on mobile */
+    flex-direction: column; /* Stack logos vertically on mobile */
+    align-items: center; /* Center logos vertically */
   }
 
   .investor-logo {
@@ -396,7 +364,7 @@
   }
 
   .investor-logo:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Subtle hover effect on mobile */
   }
 }
 
@@ -405,7 +373,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
@@ -415,11 +383,11 @@ body {
 }
 
 .about-us-container {
-  flex: 1; 
+  flex: 1; /* Fill available space */
   display: flex;
   flex-direction: column;
 }
 
 .about-us-overlay, .stats-bar, .offices-section, .investors-section {
-  flex-shrink: 0; 
+  flex-shrink: 0; /* Prevent shrinking of these sections */
 }

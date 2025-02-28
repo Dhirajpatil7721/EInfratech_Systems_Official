@@ -1,11 +1,10 @@
 import React from 'react';
-// import './AboutUs.css';
-import './AboutUS.css'
-import CounterAnimation from '../components/Counter';
+import './AboutUs.css';
+import Counter from '../components/Counter'; // Adjust the import path as needed
 
 const AboutUs = () => {
   return (
-    <div className="about-us-container mt-5">
+    <div className="about-us-container">
       <div className="about-us-overlay">
         <div className="about-us-content-container">
           <header className="about-us-header">
@@ -19,7 +18,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="stats-bar">
-        <CounterAnimation />
+        <Counter />
       </div>
       {/* Our Worldwide Offices Section */}
       <div className="offices-section">

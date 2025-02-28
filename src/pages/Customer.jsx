@@ -38,6 +38,34 @@ const Customer = () => {
       </div>
       <hr className="border-4 border-black mt-5" />
 
+      <div id="mid" className="col-12 text-center py-4 mt-5">
+        <h1>Support For Your Connected Workplace</h1>
+        <p></p>
+
+        <div className="row justify-content-center mt-5">
+          {/* First Column */}
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
+            <img src="/images/AllDay.png" alt="All Day" className="img-fluid uniform-img" />
+            <h2 className="uniform-title">All Day, Every Day</h2>
+            <p className="uniform-text">Industry leading technical support when you need it.</p>
+          </div>
+
+          {/* Second Column */}
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
+            <img src="/images/Easy.png" alt="Easy Portal" className="img-fluid uniform-img" />
+            <h2 className="uniform-title">Easy-to-Use Portal</h2>
+            <p className="uniform-text">Quickly request enhancements or report issues.</p>
+          </div>
+
+          {/* Third Column */}
+          <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
+            <img src="/images/Cust.png" alt="Customer Obsessed" className="img-fluid uniform-img" />
+            <h2 className="uniform-title">Customer Obsessed</h2>
+            <p className="uniform-text">Direct access to a dedicated CSM who knows your projects and objectives.</p>
+          </div>
+        </div>
+      </div>
+      <hr className="border-4 border-black mt-5" />   
       <div className="partners-section">
         <h3>Our Trusted Partners</h3>
         <motion.div

@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import '/src/components/Footer.css'
+import './Footer.css';
+
 
 
 function Footer() {
@@ -11,32 +12,33 @@ function Footer() {
     <footer id="footer" className="footer position-relative py-5">
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-4 col-md-6 right-border">
-            <a href="index.html" className="d-flex align-items-center text-decoration-none mb-3">
-              <span className="h3 mb-0" style={{ color: "#3D4348" }}>Einfratech</span>
-            </a>
-            <div className="pt-3">
-              <p className="mb-1">Millennium Business Park</p>
-              <p className="mb-1">IT Park, MIDC Industrial Area, Navi Mumbai, Maharashtra 400710</p>
-              <p className="mt-3"><strong>Phone:</strong> <span>+91 892.904.2908</span></p>
-              <p><strong>Email:</strong> <a href="mailto:contact@einfratechsys.com">contact@einfratechsys.com</a></p>
-            </div>
+        <div className="col-lg-4 col-md-6 text-start">
+  <a href="index.html" className="d-flex align-items-start text-decoration-none mb-3">
+    <span className="h3 mb-0" style={{ color: "#3D4348" }}>Einfratech</span>
+  </a>
+  <div className="pt-3">
+    <p className="mb-1">Millennium Business Park</p>
+    <p className="mb-1">IT Park, MIDC Industrial Area, Navi Mumbai, Maharashtra 400710</p>
+    <p className="mt-3"><strong>Phone:</strong> <span>+91 892.904.2908</span></p>
+    <p><strong>Email:</strong> <a href="mailto:contact@einfratechsys.com">contact@einfratechsys.com</a></p>
+  </div>
 
-            <div className="d-flex gap-3 mt-4 social-links">
-              <a href="#" style={{ color: "#3D4348", border: "1px solid black", padding: "7px 11px", borderRadius: "20px" }}>
-                <i className="bi bi-twitter-x"></i>
-              </a>
-              <a href="#" style={{ color: "#3D4348", border: "1px solid black", padding: "7px 11px", borderRadius: "20px" }}>
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="#" style={{ color: "#3D4348", border: "1px solid black", padding: "7px 11px", borderRadius: "20px" }}>
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="#" style={{ color: "#3D4348", border: "1px solid black", padding: "7px 11px", borderRadius: "20px" }}>
-                <i className="bi bi-linkedin"></i>
-              </a>
-            </div>
-          </div>
+  <div className="d-flex gap-3 mt-4 social-links align-items-start">
+    <a href="#" className="social-icon">
+      <i className="bi bi-twitter-x"></i>
+    </a>
+    <a href="#" className="social-icon">
+      <i className="bi bi-facebook"></i>
+    </a>
+    <a href="#" className="social-icon">
+      <i className="bi bi-instagram"></i>
+    </a>
+    <a href="#" className="social-icon">
+      <i className="bi bi-linkedin"></i>
+    </a>
+  </div>
+</div>
+
 
 
           <div className="col-lg-2 col-md-3">

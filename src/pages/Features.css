@@ -7,8 +7,8 @@
 .img-hover-zoom img {
     transition: transform 0.4s ease-in-out;
     display: block;
-    width: 100%;
-    height: auto;
+    width: 90%;
+     height: auto; 
     border-radius: inherit;
 }
 
@@ -31,4 +31,3 @@
     transform: scale(1.05); 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-

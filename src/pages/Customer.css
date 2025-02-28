@@ -100,6 +100,24 @@
 } */
 
 
+.uniform-img {
+    width: 80px;  /* Ensures all images have the same size */
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .uniform-title {
+    font-size: 18px;  /* Ensures all headings have the same font size */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .uniform-text {
+    font-size: 14px;  /* Uniform font size for text */
+    max-width: 80%;
+  }
+  
+
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
