@@ -18,13 +18,13 @@ function Features() {
 
                 <section id="features" className="features section my-5">
                     <div className="container">
-                        <div className="row gx-3 gy-4 align-items-center">
+                        <div id="grid" className="row gx-4 gy-4 align-items-center">
 
                             
-                            <div className="col-lg-5 col-md-6 d-flex align-items-center flex-column" style={{ minHeight: "400px" }}>
+                            <div className="col-lg-7 col-md-6 d-flex align-items-center flex-column" style={{ minHeight: "400px" }}>
                                 <ul className="nav nav-pills w-100" data-aos="fade-up" data-aos-delay="100">
-                                    <li className="nav-item mb-3">
-                                        <a className="nav-link active show p-3 shadow-sm" data-bs-toggle="tab" data-bs-target="#features-tab-1"
+                                    <li  className="nav-item mb-3 w-100">
+                                        <a className="nav-link active show p-3 shadow-sm d-flex gap-2" data-bs-toggle="tab" data-bs-target="#features-tab-1"
                                             style={{ borderRadius: "10px", transition: "0.3s ease-in-out" }}>
                                             <i className="bi bi-binoculars"></i>
                                             <div>
@@ -33,8 +33,8 @@ function Features() {
                                             </div>
                                         </a>
                                     </li>
-                                    <li className="nav-item mb-3">
-                                        <a className="nav-link p-3 shadow-sm" data-bs-toggle="tab" data-bs-target="#features-tab-2"
+                                    <li className="nav-item mb-3 w-100">
+                                        <a className="nav-link p-3 shadow-sm d-flex gap-2" data-bs-toggle="tab" data-bs-target="#features-tab-2"
                                             style={{ borderRadius: "10px", transition: "0.3s ease-in-out" }}>
                                             <i className="bi bi-box-seam"></i>
                                             <div>
@@ -43,8 +43,8 @@ function Features() {
                                             </div>
                                         </a>
                                     </li>
-                                    <li className="nav-item mb-3">
-                                        <a className="nav-link p-3 shadow-sm" data-bs-toggle="tab" data-bs-target="#features-tab-3"
+                                    <li className="nav-item mb-3 w-100">
+                                        <a className="nav-link p-3 shadow-sm d-flex gap-2" data-bs-toggle="tab" data-bs-target="#features-tab-3"
                                             style={{ borderRadius: "10px", transition: "0.3s ease-in-out" }}>
                                             <i className="bi bi-brightness-high"></i>
                                             <div>
@@ -53,8 +53,8 @@ function Features() {
                                             </div>
                                         </a>
                                     </li>
-                                    <li className="nav-item mb-3">
-                                        <a className="nav-link p-3 shadow-sm" data-bs-toggle="tab" data-bs-target="#features-tab-4"
+                                    <li className="nav-item mb-3 w-100">
+                                        <a className="nav-link p-3 shadow-sm d-flex gap-2" data-bs-toggle="tab" data-bs-target="#features-tab-4"
                                             style={{ borderRadius: "10px", transition: "0.3s ease-in-out" }}>
                                             <i className="bi bi-brightness-high"></i>
                                             <div>
@@ -67,7 +67,7 @@ function Features() {
                             </div>
 
                            
-                            <div className="col-lg-6 col-md-6">
+                            <div className="col-lg-5 col-md-6">
                                 <div className="tab-content img-hover-zoom" data-aos="fade-up" data-aos-delay="200">
                                     <div className="tab-pane fade active show" id="features-tab-1">
                                         <img src="/images/tabs-1.jpg" alt="" className="img-fluid img-rounded" />

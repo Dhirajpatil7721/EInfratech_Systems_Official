@@ -7,8 +7,8 @@ import "./Navbar.css";
 const NavBar = () => {
   const [dashboardDropdownOpen, setDashboardDropdownOpen] = useState(false);
   const [contactDropdownOpen, setContactDropdownOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState(""); // Store search input
-  const [showSearchModal, setShowSearchModal] = useState(false); // Toggle search modal
+  const [searchTerm, setSearchTerm] = useState("");
+  const [showSearchModal, setShowSearchModal] = useState(false);
   const navigate = useNavigate();
 
   // Example search links
@@ -25,34 +25,28 @@ const NavBar = () => {
     { name: "About Us", path: "/about" }
   ];
 
-  // Filter links based on search input
   const filteredResults = searchData.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Handle Navigation
   const handleNavigate = (path) => {
     navigate(path);
-    setShowSearchModal(false); // Close modal
-    setSearchTerm(""); // Clear search input
+    setShowSearchModal(false);
+    setSearchTerm("");
   };
 
   return (
     <>
-      <Navbar bg="white" variant="light" expand="lg" className="shadow-sm">
+      <Navbar bg="white" variant="light" expand="lg" className="shadow-sm custom-navbar">
         <Container>
-          {/* Brand Logo */}
-          <Navbar.Brand as={NavLink} to="/">
+          {/* Brand Logo & Name */}
+          <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center">
             <img
-              src="/images/logo.jpg"
+              src="/images/logop.png"
               alt="Logo"
-              width="75"
-              height="75"
-              className="d-inline-block align-top"
-            />{" "}
-            <p style={{color:"black"}}>
-            Einfratech Systems India
-            </p>
+              className="navbar-logo"
+            />
+            <p className="navbar-title">Einfratech Systems </p>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="navbar-nav" />
@@ -75,6 +69,7 @@ const NavBar = () => {
                 <NavDropdown.Item as={NavLink} to="/retailpage">Retail Industry</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/publicsector">Public Sector</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/lifescience">Life Sciences</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/education">Education</NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link as={NavLink} to="/customer">Customer</Nav.Link>
@@ -93,7 +88,7 @@ const NavBar = () => {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item as={NavLink} to="/contactus">Contact Us</Dropdown.Item>
-                  {/* <Dropdown.Item as={NavLink} to="/about">About Us</Dropdown.Item> */}
+                  <Dropdown.Item as={NavLink} to="/about">About Us</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav>
@@ -128,7 +123,6 @@ const NavBar = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             autoFocus
           />
-          {/* Search Results */}
           {searchTerm && (
             <ListGroup className="mt-2">
               {filteredResults.length > 0 ? (

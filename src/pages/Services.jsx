@@ -3,7 +3,7 @@ import "./Services.css";
 
 const Services = () => {
     return (
-        <section className="services section light-background">
+        <section className="services section light-background mt-5">
             {/* Section Title */}
             <div className="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
@@ -11,8 +11,8 @@ const Services = () => {
             </div>
 
             {/* Services Grid */}
-            <div className="container">
-                <div className="row g-5">
+            <div className="container ">
+                <div className="row g-4 ">
                     {servicesData.map((service, index) => (
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100 * (index + 1)} key={index}>
                             <div className={`service-item ${service.bgClass} position-relative`}>

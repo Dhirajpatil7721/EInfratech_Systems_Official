@@ -16,6 +16,8 @@ import LifeScience from "./pages/Lifescience.jsx";
 import HelthCare from "./pages/Healthcare.jsx";
 import RetailPage from "./pages/RetailPage.jsx";
 import Shedule from "./pages/Shedule.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Education from "./pages/Education.jsx";
 
 function App() {
   return (
@@ -36,16 +38,8 @@ function App() {
         <Route path="/healthcare" element={< HelthCare/>} />
         <Route path="/retailpage" element={< RetailPage/>} />
         <Route path="/shedule" element={< Shedule/>} />
-
-
-
-
-
-
-
-
-        
-
+        <Route path="/about" element={<AboutUs/>} />
+        <Route path="/education" element={<Education/>} />
 
       </Routes>
       <Chatbot/>

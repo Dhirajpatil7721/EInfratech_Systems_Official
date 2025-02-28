@@ -7,8 +7,8 @@ function Publicsector() {
   {/* Page Title */}
   <div className="page-title">
     <div className="container text-center">
-      <h1 data-aos="fade-down">Connected Workplace for Public Sector</h1>
-      <p data-aos="fade-up">
+      <h1 data-aos="fade-down" className="text-light" >Connected Workplace for Public Sector</h1>
+      <p data-aos="fade-up"className="text-light">
         Drive digital transformation across government agencies &amp;
         institutions.
       </p>
@@ -19,14 +19,24 @@ function Publicsector() {
     </div>
   </div>
   {/* Main Content */}
-  <section className="service-details py-5">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-8">
-          <div className="service-section mb-5" data-aos="fade-up">
-            <h3><i className="bi bi-globe" /> Connect Your Teams</h3>
-            <img src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" alt="Government Meeting" className="img-fluid mb-4" />
-            <p>
+  
+    <section className=" service-details container my-5">
+      <div className="row align-items-center mb-5">
+        {/* Image Section */}
+        <div className="col-md-6 text-center">
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
+            alt="Team Discussion"
+            className="img-fluid rounded shadow-lg"
+            // style={{height: '55%'}}
+          />
+        </div>
+        
+        {/* Text Section */}
+        <div className="col-md-6 px-5">
+        <div className="service-section mb-5" data-aos="fade-up">
+        <h3><i className="bi bi-globe" /> Connect Your Teams</h3>
+        <p>
               Consolidate systems across various departments for operational
               efficiency.
             </p>
@@ -42,14 +52,17 @@ function Publicsector() {
                 <i className="bi bi-clipboard-check" /> Real Estate Planning
               </li>
             </ul>
-          </div>
-          <div className="service-section mb-5" data-aos="fade-up">
-            <h3>
-              <i className="bi bi-bar-chart" /> Achieve Operational Efficiency
-            </h3>
-            {/* <img src="https://source.unsplash.com/800x400/?data,analytics" alt="Data Analytics" className="img-fluid mb-4" /> */}
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" alt="Data Analytics" className="img-fluid mb-4" />
-            <p>
+          
+        </div>
+        </div>
+      </div>
+
+      <div className="row align-items-center mt-4">
+        {/* Image Section */}
+        <div className="col-md-6 text-left px-3">
+           <div className="service-section mb-5" data-aos="fade-up">
+           <h3><i className="bi bi-bar-chart" /> Achieve Operational Efficiency </h3> 
+        <p>
               Bring together all aspects of enterprise service management into
               one platform.
             </p>
@@ -70,11 +83,47 @@ function Publicsector() {
                 real-time insights.
               </li>
             </ul>
-          </div>
+          
+        </div>
+        </div>
+        
+        {/* Text Section */}
+        <div className="col-md-6">
+        <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
+            alt="Team Discussion"
+            className="img-fluid rounded shadow-lg"
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  {/* some additional contant */}
+ <section className="container-fluid bg-primary text-white py-5">
+      <div className="row align-items-center">
+        {/* Image Section */}
+        <div className="col-md-6 text-center text-md-start">
+          <img
+            src="https://images.unsplash.com/photo-1720036236694-d0a231c52563?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with actual image path
+            alt="Factory Worker"
+            className="img-fluid publicimg rounded shadow-lg"
+          />
+        </div>
+
+        {/* Text Section */}
+        <div className="col-md-6 text-center text-md-start mt-4 mt-md-0 px-3">
+          <h2 className="fw-bold">
+            See How USAID Streamlined Their Supply Chain with EInfratech Systems India
+          </h2>
+          <p className="mt-3 fs-5">
+            "If you can't see what's going on, you really have nothing. You have no ability to make decisions and just constantly guessing, which is how it felt for a long time."
+          </p>
+          <p className="mt-2 fst-italic">
+            - Program of Food for Peace, USAID
+          </p>
+        </div>
+      </div>
+    </section>
   {/* Explore Public Sector Solutions */}
   <section className="explore-solutions py-5">
     <div className="container text-center">
@@ -117,9 +166,40 @@ function Publicsector() {
     </div>
   </section>
 
- 
-
 </div>
+
+<section id="clients" className="clients section mt-4">
+      <div className="container" data-aos="fade-up">
+        <div className="row gy-4">
+            <h3 className="text-center">Implementation Partners</h3>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-1.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-2.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-3.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-4.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-5.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+          <div className="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="src/assets/img/clients/client-6.png" className="img-fluid" alt />
+          </div>
+          {/* End Client Item */}
+        </div>
+      </div>
+    </section>
 
 
         </>

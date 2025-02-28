@@ -4,7 +4,7 @@ import './Contactus.css'; // Make sure to create this CSS file
 const Contactus = () => {
     return (
         <div>
-            <section id="contact" className="contact section">
+            <section id="contact" className="contact section mt-5">
                 {/* Section Title */}
                 <div className="container section-title" data-aos="fade-up">
                     <h2>Contact Us </h2>
@@ -60,7 +60,7 @@ const Contactus = () => {
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.813893652865!2d73.0269571!3d19.1180869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b906f5dfedc3%3A0x8e9d57d06e6e00fa!2sMillennium%20Business%20Park%2C%20Mahape%2C%20Navi%20Mumbai%2C%20Maharashtra%20400710%2C%20India!5e0!3m2!1sen!2sin!4v1708691234567"
                                 frameBorder="0"
-                                style={{ border: 0, width: '100%', height: '400px' }}
+                                style={{ border: 0, width: '100%', height: '490px' }}
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"

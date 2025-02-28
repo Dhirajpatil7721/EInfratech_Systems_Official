@@ -24,7 +24,7 @@ const Schedul = () => {
   };
 
   return (
-    <Container className="mt-5 mb-5">
+    <Container className="mt-8 mb-5">
       <Row className="justify-content-center">
         <Col md={6}>
           <h2 className="text-center mb-4">Schedule a Demo</h2>

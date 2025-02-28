@@ -1,5 +1,6 @@
 .hero-section {
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    /* background: linear-gradient(to bottom, #f8f9fa, #e9ecef); */
+    
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@
     max-width: 1200px;
     width: 100%;
     padding: 20px;
+    /* background-color: red; */
 }
 
 /* Hero Image */
@@ -33,9 +35,17 @@
 
 /* Floating Animation */
 @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Hero Content */
@@ -67,12 +77,14 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
         text-align: center;
     }
 
     .hero-image {
-        order: -1; /* Moves the image to the top */
+        order: -1;
+        /* Moves the image to the top */
         margin-bottom: 20px;
     }
 

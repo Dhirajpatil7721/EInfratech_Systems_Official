@@ -1,5 +1,4 @@
-/* Default Navbar Styling */
-.navbar {
+.custom-navbar {
   background-color: antiquewhite;
   padding: 10px 15px;
   position: fixed;
@@ -7,58 +6,32 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white !important;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  height: 70px;
 }
 
+/* Logo */
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+}
+
+/* Brand Title */
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+/* Navbar Links */
 .navbar-nav {
+  display: flex;
+  align-items: center;
   gap: 15px;
-}
-
-/* Center Navbar Items on Mobile */
-@media (max-width: 991px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Center align items */
-    text-align: center;
-  }
-
-  .navbar-brand {
-    justify-content: center;  /* Center logo */
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  .custom-dropdown .dropdown-menu {
-    text-align: center;
-    width: 100%;
-  }
-
-  /* Center Sign In Button */
-  .navbar .btn {
-    display: block;
-    width: fit-content;
-    margin: 10px auto;
-  }
 }
 
 /* Dropdown Hover Effect */
@@ -72,16 +45,60 @@
   padding: 8px 20px;
 }
 
+/* Search Icon */
 .search-icon {
   border: none;
   background: transparent;
   font-size: 20px;
 }
 
-.modal-header {
-  border-bottom: none;
+/* Responsive Design */
+@media (max-width: 991px) {
+  .custom-navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .navbar-brand {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar-title {
+    font-size: 1.3rem;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .navbar .btn {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
 }
 
-.modal-footer {
-  border-top: none;
+@media (max-width: 576px) {
+  .navbar-title {
+    font-size: 14px;
+  }
+
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+  }
 }

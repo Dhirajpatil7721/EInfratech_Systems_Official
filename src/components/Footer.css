@@ -1,0 +1,32 @@
+.right-border {
+    position: relative;
+    padding-right: 20px;
+}
+
+.right-border::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: black;
+}
+
+#footer {
+    background-color: rgba(158, 158, 158, 0.801);
+}
+
+
+.social-links a:hover {
+    color: #388da8 !important;
+    border-color: #388da8 !important;
+}
+
+.footer-links a:hover {
+    color: #388da8 !important;
+}
+
+.credits a:hover {
+    color: #388da8 !important;
+}

@@ -43,7 +43,7 @@ const Hero = () => {
 
                     {/* Buttons - Stay Below Text */}
                     <div className="hero-buttons">
-                        <Link to="/shedule" className="btn btn-primary">Schedule Demo</Link>
+                        <Link to="/shedule"  className="btn btn-primary">Schedule Demo</Link>
                         <Link to="/employee-webmail" className="btn btn-outline-secondary">Employee Webmail</Link>
                     </div>
                 </motion.div>

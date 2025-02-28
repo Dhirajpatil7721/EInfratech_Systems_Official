@@ -10,7 +10,7 @@ const Customer = () => {
       transition={{ duration: 0.5 }}
       className="customer-container"
     >
-      <div className="content-section">
+      <div id="cus" className="content-section mt-5">
         <div className="content">
           <h2>Who We Are</h2>
           <p><strong>Innovating the Future of Workplace Management</strong></p>
@@ -23,23 +23,17 @@ const Customer = () => {
             <li><strong>Data-Driven Insights</strong> – Smart analytics for informed decision-making.</li>
             <li><strong>Advanced Technology</strong> – AI-powered solutions for modern enterprises.</li>
           </ul>
-          <a href="#" className="read-more">Read More</a>
+          <a href="#" className="read-more bg-primary text-light">Read More</a>
         </div>
 
-        
+
         <div className="grid-images">
-          {/* <motion.img src="/images/about-company-1.jpg" alt="Workplace 1" whileHover={{ scale: 1.1 }} />
-          <motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} />
-          <motion.img src="/images/about-company-3.jpg" alt="Workplace 3" whileHover={{ scale: 1.1 }} /> */}
 
           <div className="parent">
             <div className="div1"><motion.img src="/images/about-company-1.jpg" alt="Workplace 1" whileHover={{ scale: 1.1 }} /></div>
             <div className="div2"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
             <div className="div3"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
-            <div className="div4"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
-            <div className="div5"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
           </div>
-
         </div>
       </div>
 
