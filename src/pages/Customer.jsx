@@ -36,6 +36,7 @@ const Customer = () => {
           </div>
         </div>
       </div>
+      <hr className="border-4 border-black mt-5" />
 
       <div className="partners-section">
         <h3>Our Trusted Partners</h3>
