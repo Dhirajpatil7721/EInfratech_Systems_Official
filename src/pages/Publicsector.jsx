@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Publicsector() {
     return(
@@ -28,6 +30,7 @@ function Publicsector() {
             src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
             alt="Team Discussion"
             className="img-fluid public-image  rounded shadow-lg"
+            style={{ maxWidth: "90%", height: "auto" }}
           />
         </div>
         
@@ -91,7 +94,8 @@ function Publicsector() {
         <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg ms-5"          
+            className="img-fluid rounded shadow-lg ms-4"  
+            style={{ maxWidth: "90%", height: "auto" }}        
           />
         </div>
       </div>

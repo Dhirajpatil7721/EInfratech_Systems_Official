@@ -25,7 +25,7 @@ function LifeScience1() {
             src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600" // Replace with actual image path
             alt="Team Discussion"
             className="img-fluid rounded shadow-lg"
-            // style={{height: '55%'}}
+            style={{ maxWidth: "90%", height: "auto" }}
           />
         </div>
         
@@ -72,7 +72,8 @@ function LifeScience1() {
         <img
             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg ms-5"
+            className="img-fluid rounded shadow-lg ms-4"
+            style={{ maxWidth: "90%", height: "auto" }}
           />
         </div>
       </div>
