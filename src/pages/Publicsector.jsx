@@ -7,7 +7,7 @@ function Publicsector() {
   {/* Page Title */}
   <div className="page-title">
     <div className="container text-center">
-      <h1 data-aos="fade-down" className="text-light" >Connected Workplace for Public Sector</h1>
+      <h1 data-aos="fade-down" className="text-light mt-4" >Connected Workplace for Public Sector</h1>
       <p data-aos="fade-up"className="text-light">
         Drive digital transformation across government agencies &amp;
         institutions.
@@ -22,13 +22,12 @@ function Publicsector() {
   
     <section className=" service-details container my-5">
       <div className="row align-items-center mb-5">
-        {/* Image Section */}
+       
         <div className="col-md-6 text-center">
           <img
             src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
-            // style={{height: '55%'}}
+            className="img-fluid public-image  rounded shadow-lg"
           />
         </div>
         
@@ -92,7 +91,7 @@ function Publicsector() {
         <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
+            className="img-fluid rounded shadow-lg ms-5"          
           />
         </div>
       </div>
