@@ -51,7 +51,10 @@
     transition: all 0.3s ease-in-out;
 }
 
-
+#cuh3{
+    color: rgb(78, 77, 77);
+    margin-bottom: 20px;
+}
 
 
 .grid-images {

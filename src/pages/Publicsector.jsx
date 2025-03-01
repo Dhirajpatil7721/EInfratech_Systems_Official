@@ -1,20 +1,19 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Publicsector() {
     return(
         <>
         <div>
   {/* Page Title */}
-  <div className="page-title">
+  <div className="page-title"
+  style={{ backgroundImage: `url('https://img.freepik.com/free-photo/abstract-business-people-city-buildings_53876-139657.jpg?t=st=1740831517~exp=1740835117~hmac=46f0ec993c51c2d61938882897c7edbada801f28c649b5d976e72a52fb95aa4d&w=1480')`, backgroundSize: 'cover', height: '45vh' }}>
     <div className="container text-center">
-      <h1 data-aos="fade-down" className="text-light mt-4" >Connected Workplace for Public Sector</h1>
-      <p data-aos="fade-up"className="text-light">
+      <h1 data-aos="fade-down" className="text-light" >Connected Workplace for Public Sector</h1>
+      <p data-aos="fade-up"className="text-white fw-bold fs-5">
         Drive digital transformation across government agencies &amp;
         institutions.
       </p>
-      <a href="shedule" className="btn btn-primary mt-3 btn-animate">Schedule a Demo</a>
+      <a href="shedule" className="btn btn-primary btn-animate">Schedule a Demo</a>
       
       {/* <button className="btn btn-primary mt-3 btn-animate" onClick={() => navigate("/Contact")}>Schedule a Demo</button> */}
 
@@ -22,21 +21,22 @@ function Publicsector() {
   </div>
   {/* Main Content */}
   
-    <section className=" service-details container my-5">
+  <section className=" service-details container my-3">
       <div className="row align-items-center mb-5">
-       
+        {/* Image Section */}
         <div className="col-md-6 text-center">
           <img
             src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid public-image  rounded shadow-lg"
-            style={{ maxWidth: "90%", height: "auto" }}
+            className="img-fluid rounded shadow-lg"
+            style={{height:"40vh"}}
+            // style={{height: '55%'}}
           />
         </div>
         
         {/* Text Section */}
         <div className="col-md-6 px-5">
-        <div className="service-section mb-5" data-aos="fade-up">
+        <div className="service-section mb-1 mt-3" data-aos="fade-up">
         <h3><i className="bi bi-globe" /> Connect Your Teams</h3>
         <p>
               Consolidate systems across various departments for operational
@@ -61,8 +61,14 @@ function Publicsector() {
 
       <div className="row align-items-center mt-4">
         {/* Image Section */}
-        <div className="col-md-6 text-left px-3">
-           <div className="service-section mb-5" data-aos="fade-up">
+        <div className="col-md-6 text-center px-3">
+        <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
+            alt="Team Discussion"
+            className="img-fluid rounded shadow-lg"
+            style={{height:"40vh"}}
+          />
+           {/* <div className="service-section mb-5" data-aos="fade-up">
            <h3><i className="bi bi-bar-chart" /> Achieve Operational Efficiency </h3> 
         <p>
               Bring together all aspects of enterprise service management into
@@ -71,42 +77,64 @@ function Publicsector() {
             <ul>
               <li>
                 <i className="bi bi-link" />
-                <strong>Ensure Complete Connectivity:</strong> Connect teams,
-                processes &amp; assets.
+                Ensure Complete 
               </li>
               <li>
                 <i className="bi bi-person-check" />
-                <strong>Enable Agencies &amp; Mission Partners:</strong> Improve
-                workflow &amp; productivity.
+                Enable Agencies &amp; Mission 
               </li>
               <li>
                 <i className="bi bi-graph-up-arrow" />
-                <strong>Access Data Anytime:</strong> Custom dashboards &amp;
-                real-time insights.
+                Access Data Anytime
+              </li>
+            </ul>
+          
+        </div> */}
+        </div>
+        
+        {/* Text Section */}
+        <div className="col-md-6">
+        {/* <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
+            alt="Team Discussion"
+            className="img-fluid rounded shadow-lg"
+            style={{height:"40vh"}}
+          /> */}
+
+<div className="service-section  px-5 mt-3" data-aos="fade-up">
+           <h3><i className="bi bi-bar-chart" /> Achieve Operational Efficiency </h3> 
+        <p>
+              Bring together all aspects of enterprise service management into
+              one platform.
+            </p>
+            <ul>
+              <li>
+                <i className="bi bi-link" />
+                Ensure Complete 
+              </li>
+              <li>
+                <i className="bi bi-person-check" />
+                Enable Agencies &amp; Mission 
+              </li>
+              <li>
+                <i className="bi bi-graph-up-arrow" />
+                Access Data Anytime
               </li>
             </ul>
           
         </div>
         </div>
-        
-        {/* Text Section */}
-        <div className="col-md-6">
-        <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
-            alt="Team Discussion"
-            className="img-fluid rounded shadow-lg ms-4"  
-            style={{ maxWidth: "90%", height: "auto" }}        
-          />
-        </div>
       </div>
     </section>
+
+ 
 
   {/* some additional contant */}
  <section className="container-fluid bg-primary text-white py-5">
       <div className="row align-items-center">
         {/* Image Section */}
         <div className="col-md-6 text-center text-md-start">
-          <img
+        <img
             src="https://images.unsplash.com/photo-1720036236694-d0a231c52563?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with actual image path
             alt="Factory Worker"
             className="img-fluid publicimg rounded shadow-lg"
@@ -177,27 +205,27 @@ function Publicsector() {
             <h3 className="text-center">Implementation Partners</h3>
 
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/grabo.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-1.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/citr.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-2.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/trus.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-3.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/mybo.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-4.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/slash.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-5.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="/public/images/lifrg.png" className="img-fluid" alt />
+            <img src="src/assets/img/clients/client-6.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
         </div>

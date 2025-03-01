@@ -23,7 +23,7 @@ const Contactus = () => {
                             >
                                 <i className="bi bi-geo-alt"></i>
                                 <h3>Address</h3>
-                                <p>
+                                <p className='px-4'>
                                     IT Park, MBP Rd, Millenium Business Park, MIDC Industrial Area,
                                     Sector 1, Kopar Khairane, Navi Mumbai, Maharashtra 400710
                                 </p>

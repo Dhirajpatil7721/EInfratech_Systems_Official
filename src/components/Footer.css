@@ -40,12 +40,12 @@
     align-items: center;
     justify-content:center;
 } */
-
-.footer {
-    background-color: #2d3748;
+#footer {
+    background-color: #dbdbdb;
+    /* background-color: red; */
     width: 100%;
     padding: 40px 20px;
-    margin-top: 40px;
+    margin-top: 0px;
     position: relative;
     z-index: 1;
     text-align: left;
@@ -150,15 +150,39 @@
   }
   
   /* Copyright Section */
-  .footer-copyright {
-    background-color: #132240;
+  /* .footer-copyright {
+    background-color: #161616;
     padding: 10px 20px;
     text-align: center;
     color: #a0aec0;
     font-size: 0.8em;
     margin-top: 15px;
-  }
+    height: 80px;
+  } */
   
+  .footer-copyright {
+    /* background-color: #161616; */
+    padding: 10px 20px;
+    text-align: center;
+    color: #a0aec0;
+    font-size: 0.8em;
+    margin-top: 15px;
+    height: auto; /* Allow content to adjust */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure text remains readable on small screens */
+@media (max-width: 576px) {
+    .footer-copyright {
+        font-size: 0.7em;
+        padding: 15px;
+    }
+}
+
+
   .footer-copyright p {
     margin: 0;
   }
@@ -228,7 +252,5 @@
     .footer-copyright {
         padding: 10px;
         font-size: 0.8em;
-        margin-top: 15px;
+        margin-top:15px;}
     }
-  }
-  

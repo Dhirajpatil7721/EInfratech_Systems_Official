@@ -199,8 +199,8 @@ const RetailPage = () => {
       {/* Call to Action */}
       <section className="cta-section text-center py-5 bg-light">
         <Container>
-          <h2 className="fw-bold">Ready to Transform Your Retail Business?</h2>
-          <p className="lead text-secondary">Join thousands of businesses using our AI-powered solutions.</p>
+          <h2 className="fw-bold ">Ready to Transform Your Retail Business?</h2>
+          <p className="lead text-white">Join thousands of businesses using our AI-powered solutions.</p>
           <Button variant="primary" className="rounded-pill px-4 py-2 btn-pulse">Contact Us</Button>
         </Container>
       </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import NavBar from "./components/Navbar.jsx";
 import Customer from "./pages/Customer.jsx";
 import Services from "./pages/Services.jsx";
@@ -24,9 +24,9 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
-      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/customer" element={<Customer />} />
         <Route path="/services" element={<Services />} />
@@ -36,18 +36,15 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/publicsector" element={<Publicsector />} />
         <Route path="/lifescience" element={<LifeScience />} />
-        <Route path="/healthcare" element={< HelthCare/>} />
-        <Route path="/retailpage" element={< RetailPage/>} />
-        <Route path="/shedule" element={< Shedule/>} />
-        <Route path="/about" element={<AboutUs/>} />
-        <Route path="/education" element={<Education/>} />
-        <Route path="/professional" element={<Professional/>} />
-
-
-
+        {/* <Route path="/healthcare" element={< HelthCare/>} /> */}
+        <Route path="/retailpage" element={< RetailPage />} />
+        <Route path="/shedule" element={< Shedule />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/professional" element={<Professional />} />
       </Routes>
-      <Chatbot/>
-    <Footer/>
+      <Chatbot />
+      <Footer />
 
     </Router>
   );

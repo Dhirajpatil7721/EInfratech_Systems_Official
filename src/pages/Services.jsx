@@ -3,7 +3,7 @@ import "./Services.css";
 
 const Services = () => {
     return (
-        <section className="services section light-background mt-5">
+        <section className="services section  mt-5">
             {/* Section Title */}
             <div className="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
@@ -18,7 +18,7 @@ const Services = () => {
                             <div className={`service-item ${service.bgClass} position-relative`}>
                                 <i className={`bi ${service.icon} icon`} />
                                 <div className="service-content">
-                                    <h3>{service.title}</h3>
+                                    <h3 className="text-center">{service.title}</h3>
                                     <p>{service.description}</p>
                                     <a href="#" className="read-more stretched-link">
                                         Learn More <i className="bi bi-arrow-right" />

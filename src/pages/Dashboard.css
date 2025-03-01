@@ -6,9 +6,7 @@
     max-width: 1200px;
     flex-wrap: wrap;
 }
-#txtdash{
-    color: rgb(66, 64, 64);
-}
+
 .dashboard-card {
     display: flex;
     align-items: center;

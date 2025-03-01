@@ -1,200 +1,478 @@
-body {
-    font-family: 'Inter', sans-serif;
-    color: #212529;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+/* Education Page Styles */
+.education-page {
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+  overflow-x: hidden;
 }
 
-/* Page Title Animations */
-.page-title1 {
-    background: url('./images/education4.jpg') no-repeat center center/cover;
-    padding: 100px 20px;
-    color: #ffffff;
-    position: relative;
-    text-align: center;
+/* Header/Hero Section */
+.education-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
 }
 
-.page-title::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    animation: pulseBlur 4s infinite;
+.education-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-.page-title h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    animation: slideInFromTop 1s ease-out;
-    position: relative;
-    z-index: 1;
+.education-header .container {
+  position: relative;
+  z-index: 2;
 }
 
-.page-title p,
-.page-title .btn {
-    position: relative;
-    z-index: 1;
+.education-header h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Prevent button from bouncing infinitely */
-.page-title .btn {
-    animation: bounceIn 1.5s ease-out;
-}
-.service-details {
-    padding-left: 20px;
-    padding-Right: 20px;
-}
-/* Service Details Animations */
-.service-details img {
-    /* max-width: 100%; */
-    max-width: 70%;
-    /* border-radius: 8px; */
-    animation: fadeInScale 1s ease-out;
-}
-#helthtxt{
-    font-size: 20px;
+.education-header p {
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* List Animation */
-.info-list li {
-    margin-bottom: 10px;
-    opacity: 0;
-    animation: slideInFromLeft 0.8s ease forwards;
+.education-header .btn {
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
 }
 
-/* Staggered animation delay for list items */
-.info-list li:nth-child(1) {
-    animation-delay: 0.2s;
+.education-header .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
 }
 
-.info-list li:nth-child(2) {
-    animation-delay: 0.4s;
+/* Services Section */
+.education-services {
+  padding: 60px 0;
 }
 
-.info-list li:nth-child(3) {
-    animation-delay: 0.6s;
+.education-services .image-container {
+  padding: 10px;
 }
 
-.info-list li:nth-child(4) {
-    animation-delay: 0.8s;
+.education-services img {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Explore Solutions Section */
-.explore-solutions {
-    background: #f8f9fa;
+.education-services img:hover {
+  transform: scale(1.02);
+}
+
+.section-title {
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  font-size: 2.4rem;
+}
+
+.service-section {
+  padding: 15px 10px;
+}
+
+.features-list {
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item i {
+  font-size: 1.6rem;
+  color: #0066cc;
+  margin-right: 15px;
+}
+
+.feature-item span {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 60px 0;
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(0, 123, 255, 0.07), rgba(102, 16, 242, 0.07));
+}
+
+.testimonial-section .image-container {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.testimonial-section img {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  padding: 25px 20px;
+}
+
+.testimonial-section h2 {
+  font-weight: 700;
+  color: #0066cc;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+  padding-left: 15px;
+  border-left: 3px solid #0066cc;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+/* Solutions Section */
+.education-solutions {
+  padding: 60px 0;
+  background-color: #fbfbfb;
+}
+
+.education-solutions h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.solution-subtitle {
+  color: #555;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.solution-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.solution-card:hover .card-img-wrapper {
+  transform: scale(1.05);
+}
+
+.solution-card .card-body {
+  padding: 15px;
+}
+
+.solution-card h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.solution-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+.cta-section {
+  color: white;
+  padding: 50px 0;
+  background-image: linear-gradient(135deg, #0066cc, #6610f2);
+}
+
+.cta-section h3 {
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  opacity: 0.9;
+}
+
+.cta-section .btn {
+  background-color: white;
+  color: #0066cc;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.cta-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199.98px) {
+  .education-header h1 {
+    font-size: 2.6rem;
+  }
+  
+  .section-title, .testimonial-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .education-services {
     padding: 50px 0;
+  }
 }
 
-.card {
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+@media (max-width: 991.98px) {
+  .education-header {
+    padding: 80px 0;
+  }
+  
+  .education-header h1 {
+    font-size: 2.4rem;
+  }
+  
+  .education-header p {
+    font-size: 1.2rem;
+  }
+  
+  .service-section {
+    padding: 15px 10px;
+    margin-top: 20px;
+  }
+  
+  .testimonial-content {
+    padding: 20px 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  
+  .testimonial-section, .education-solutions {
+    padding: 50px 0;
+  }
+  
+  .education-solutions h2 {
+    font-size: 2.3rem;
+  }
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+@media (max-width: 767.98px) {
+  .education-header {
+    padding: 60px 0;
+  }
+  
+  .education-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .education-header p {
+    font-size: 1.1rem;
+  }
+  
+  .education-services {
+    padding: 40px 0;
+  }
+  
+  .section-title, .testimonial-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .feature-item {
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .feature-item i {
+    font-size: 1.4rem;
+    margin-right: 12px;
+  }
+  
+  .feature-item span {
+    font-size: 1.05rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    padding-left: 12px;
+  }
+  
+  .solution-card .card-body {
+    padding: 15px 12px;
+  }
+  
+  .solution-card h5 {
+    font-size: 1.3rem;
+  }
+  
+  .solution-card p {
+    font-size: 1rem;
+  }
+  
+  .cta-section h3 {
+    font-size: 1.9rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.1rem;
+  }
+  
+  .card-img-wrapper {
+    height: 180px;
+  }
+  
+  .testimonial-section, .education-solutions {
+    padding: 40px 0;
+  }
+  
+  .col-md-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-    animation: zoomIn 1s ease-out;
-}
-
-/* Keyframes */
-@keyframes pulseBlur {
-
-    0%,
-    100% {
-        filter: blur(5px);
-        opacity: 1;
-    }
-
-    50% {
-        filter: blur(7px);
-        opacity: 0.85;
-    }
-}
-
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes bounceIn {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-10px);
-    }
-
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-@keyframes fadeInScale {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1.1);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Responsive Fixes */
-@media (max-width: 768px) {
-    .page-title {
-        padding: 80px 15px;
-    }
-
-    .page-title h1 {
-        font-size: 2rem;
-    }
-
-    .info-list li {
-        font-size: 14px;
-    }
+@media (max-width: 575.98px) {
+  .education-header {
+    padding: 50px 0;
+  }
+  
+  .education-header h1 {
+    font-size: 1.9rem;
+  }
+  
+  .education-header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .education-header .btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+  
+  .education-services {
+    padding: 40px 0;
+  }
+  
+  .section-title, .testimonial-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-item {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .feature-item i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  
+  .testimonial-content {
+    padding: 20px 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  
+  .card-img-wrapper {
+    height: 160px;
+  }
+  
+  .cta-section {
+    padding: 40px 0;
+  }
+  
+  .cta-section h3 {
+    font-size: 1.7rem;
+    padding: 0 10px;
+  }
+  
+  .cta-section p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .cta-section .btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+  
+  .testimonial-section, .education-solutions {
+    padding: 40px 0;
+  }
+  
+  .solution-card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }

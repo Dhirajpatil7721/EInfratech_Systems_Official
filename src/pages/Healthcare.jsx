@@ -208,7 +208,6 @@ function HealthCare() {
         </div>
       </section>
 
-      {/* Service Details */}
       <section className="service-details py-5">
         <div className="container">
           <div className="row">

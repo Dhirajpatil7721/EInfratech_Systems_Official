@@ -13,17 +13,17 @@ const Customer = () => {
       <div id="cus" className="content-section mt-5">
         <div className="content">
           <h2>Who We Are</h2>
-          <p><strong>Innovating the Future of Workplace Management</strong></p>
-          <p>
-            At EInfratech Systems, we specialize in delivering intelligent, scalable, and secure workplace management solutions.
-            Our mission is to streamline operations, enhance efficiency, and drive digital transformation across industries.
+          <p><strong>Innovating  Future of Workplace Management</strong></p>
+          <p style={{ letterSpacing: "-0.5px" }}>
+            At EInfratech Systems,we specialize in delivering the intelligent,scalable,and secure the workplace management solutions.
+            Our mission is to streamline operations,enhance the efficiency,and drive digital transformation across industries.drive digital transformation across industries
           </p>
           <ul>
             <li><strong>Seamless Integration</strong> – Unified platforms for optimized workflows.</li>
             <li><strong>Data-Driven Insights</strong> – Smart analytics for informed decision-making.</li>
             <li><strong>Advanced Technology</strong> – AI-powered solutions for modern enterprises.</li>
           </ul>
-          <a href="#" className="read-more bg-primary text-light">Read More</a>
+          {/* <a href="#" className="read-more bg-primary text-light">Read More</a> */}
         </div>
 
 
@@ -40,7 +40,7 @@ const Customer = () => {
 
       <div id="mid" className="col-12 text-center py-4 mt-5">
         <h1>Support For Your Connected Workplace</h1>
-        <p></p>
+        {/* <p></p> */}
 
         <div className="row justify-content-center mt-5">
           {/* First Column */}
@@ -65,9 +65,9 @@ const Customer = () => {
           </div>
         </div>
       </div>
-      <hr className="border-4 border-black mt-5" />   
+      <hr className="border-4 border-black mt-5" />
       <div className="partners-section">
-        <h3>Our Trusted Partners</h3>
+        <h3 id="cuh3">Our Trusted Partners</h3>
         <motion.div
           className="partners-logos"
           initial={{ opacity: 0, y: 30 }}
@@ -87,4 +87,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Customer;
