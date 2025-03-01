@@ -86,7 +86,7 @@ const Dashboard = () => {
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
-                        className="col-md-6">
+                        className="col-md-6">   
                         <h2 className="fw-bold text-center display-4 text-primary">We've Got You Covered</h2>
                         <p className="lead text-center fs-4 ">We've worked with clients across industries to make their workplace experience better.</p>
                     </motion.div>
@@ -98,19 +98,19 @@ const Dashboard = () => {
                         <div className="row text-center">
                             <div className="col-6 mb-3">
                                 <FaUsers className="icon-large icon-animated" />
-                                <p className="fs-3 text-info"><strong>1650+</strong> Clients Served</p>
+                                <p className="fs-3 " id="txtdash"><strong>1650+</strong> Clients Served</p>
                             </div>
                             <div className="col-6 mb-3">
                                 <FaServer className="icon-xxl icon-animated" />
-                                <p className="fs-3 text-info"><strong>15M+</strong> OT Assets Managed</p>
+                                <p className="fs-3 " id="txtdash"><strong>15M+</strong> OT Assets Managed</p>
                             </div>
                             <div className="col-6">
                                 <FaClipboardCheck className="icon-xl icon-animated" />
-                                <p className="fs-3 text-info"><strong>30M+</strong> Work Orders per Month</p>
+                                <p className="fs-3 " id="txtdash"><strong>30M+</strong> Work Orders per Month</p>
                             </div>
                             <div className="col-6">
                                 <FaHeadset className="icon-xl icon-animated" />
-                                <p className="fs-3 text-info"><strong>24x7</strong> Global Customer Care</p>
+                                <p className="fs-3 " id="txtdash"><strong>24x7</strong> Global Customer Care</p>
                             </div>
                         </div>
                     </motion.div>

@@ -18,6 +18,7 @@ import RetailPage from "./pages/RetailPage.jsx";
 import Shedule from "./pages/Shedule.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Education from "./pages/Education.jsx";
+import Professional from "./pages/Professional.jsx";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         <Route path="/shedule" element={< Shedule/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/education" element={<Education/>} />
+        <Route path="/professional" element={<Professional/>} />
+
+
 
       </Routes>
       <Chatbot/>

@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Publicsector() {
     return(
@@ -7,7 +9,7 @@ function Publicsector() {
   {/* Page Title */}
   <div className="page-title">
     <div className="container text-center">
-      <h1 data-aos="fade-down" className="text-light" >Connected Workplace for Public Sector</h1>
+      <h1 data-aos="fade-down" className="text-light mt-4" >Connected Workplace for Public Sector</h1>
       <p data-aos="fade-up"className="text-light">
         Drive digital transformation across government agencies &amp;
         institutions.
@@ -22,13 +24,13 @@ function Publicsector() {
   
     <section className=" service-details container my-5">
       <div className="row align-items-center mb-5">
-        {/* Image Section */}
+       
         <div className="col-md-6 text-center">
           <img
             src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
-            // style={{height: '55%'}}
+            className="img-fluid public-image  rounded shadow-lg"
+            style={{ maxWidth: "90%", height: "auto" }}
           />
         </div>
         
@@ -92,7 +94,8 @@ function Publicsector() {
         <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
             alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
+            className="img-fluid rounded shadow-lg ms-4"  
+            style={{ maxWidth: "90%", height: "auto" }}        
           />
         </div>
       </div>
@@ -174,27 +177,27 @@ function Publicsector() {
             <h3 className="text-center">Implementation Partners</h3>
 
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-1.png" className="img-fluid" alt />
+            <img src="/public/images/grabo.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-2.png" className="img-fluid" alt />
+            <img src="/public/images/citr.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-3.png" className="img-fluid" alt />
+            <img src="/public/images/trus.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-4.png" className="img-fluid" alt />
+            <img src="/public/images/mybo.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-5.png" className="img-fluid" alt />
+            <img src="/public/images/slash.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-6.png" className="img-fluid" alt />
+            <img src="/public/images/lifrg.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
         </div>

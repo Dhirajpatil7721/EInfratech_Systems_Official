@@ -45,21 +45,21 @@ const Customer = () => {
         <div className="row justify-content-center mt-5">
           {/* First Column */}
           <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
-            <img src="/images/AllDay.png" alt="All Day" className="img-fluid uniform-img" />
+            <img src="/images/cus3.jpg" alt="All Day" className="img-fluid uniform-img" />
             <h2 className="uniform-title">All Day, Every Day</h2>
             <p className="uniform-text">Industry leading technical support when you need it.</p>
           </div>
 
           {/* Second Column */}
           <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
-            <img src="/images/Easy.png" alt="Easy Portal" className="img-fluid uniform-img" />
+            <img src="/images/cus1.jpg" alt="Easy Portal" className="img-fluid uniform-img" />
             <h2 className="uniform-title">Easy-to-Use Portal</h2>
             <p className="uniform-text">Quickly request enhancements or report issues.</p>
           </div>
 
           {/* Third Column */}
           <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
-            <img src="/images/Cust.png" alt="Customer Obsessed" className="img-fluid uniform-img" />
+            <img src="/images/cus2.jpg" alt="Customer Obsessed" className="img-fluid uniform-img" />
             <h2 className="uniform-title">Customer Obsessed</h2>
             <p className="uniform-text">Direct access to a dedicated CSM who knows your projects and objectives.</p>
           </div>
@@ -87,4 +87,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Customer;
