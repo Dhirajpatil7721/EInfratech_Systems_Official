@@ -145,7 +145,7 @@ function LifeScience1() {
 
 
         {/* some additional contant */}
-        <section className="container-fluid bg-primary text-white">
+        <section className="container-fluid bg-info text-white ">
           <div className="row align-items-center">
             {/* Image Section */}
             <div className="col-md-6 text-center text-md-start">
@@ -157,7 +157,7 @@ function LifeScience1() {
             </div>
 
             {/* Text Section */}
-            <div className="col-md-6 text-center text-md-start mt-4 mt-md-0 px-3">
+            <div className="col-md-6 text-center text-md-start mt-4 mt-md-0 px-3 ">
               <h2 className="fw-bold">
                 How GMP Facilities Use Connected Workplace for Life Sciences
               </h2>

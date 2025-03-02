@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './Counter'
+import './Counter.css'
 
 const Counter = () => {
   const [employees, setEmployees] = useState(0);
@@ -44,19 +46,20 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="counter-container">
+    <div className="counter-container"id="counterd">
       <div className="counter-item" style={{ '--order': 1 }}>
-        <span className="number">{employees}</span>
-        <span className="label">Employees</span>
-      </div>
-      <div className="counter-item" style={{ '--order': 2 }}>
-        <span className="number">{clients}</span>
-        <span className="label">Clients</span>
+        <span className="number text-dark">{employees}</span>
+        <span className="label text-dark">Employees</span>
       </div>
       <div className="counter-item" style={{ '--order': 3 }}>
-        <span className="number">{years}</span>
-        <span className="label">Years of industry experience</span>
+        <span className="number text-dark">{years}</span>
+        <span className="label text-dark">Years of industry </span>
       </div>
+      <div className="counter-item" style={{ '--order': 2 }}>
+        <span className="number text-dark">{clients}</span>
+        <span className="label text-dark">Clients</span>
+      </div>
+   
     </div>
   );
 };

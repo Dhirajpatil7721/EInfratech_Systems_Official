@@ -186,9 +186,9 @@ function Features() {
                     </div>
                 </div>
 
-                <section id="features" className="features section ">
+                <section id="features" className="features fsection  fcustom fcustom" >
                     <div className="container">
-                        <div id="grid" className="row gx-4 gy-4 align-items-center px-5">
+                        <div id="grid" className="row gx-4 gy-3 align-items-center px-5">
 
                             
                             <div className="col-lg-7 col-md-6 d-flex align-items-center flex-column" style={{ minHeight: "400px" }}>
@@ -255,7 +255,7 @@ function Features() {
                     </div>
                 </section>
 
-                <section id="features-details" className="features-details section mb-5">
+                <section id="features-details" className="features-details fsection fcustom">
                     <div className="container px-5">
                        
                         <div className="row align-items-center gy-4">
