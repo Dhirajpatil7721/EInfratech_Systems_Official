@@ -183,7 +183,7 @@ const RetailPage = () => {
             <FaCashRegister size={42} />
           </div>
           <Card.Title className="fw-bold">POS System</Card.Title>
-          <Card.Text className="text-secondary">Modernize point-of-sale systems for seamless and efficient transactions with advanced technology.</Card.Text>
+          <Card.Text className="text-secondary">Modernize point-of-sale systems for seamless and efficient transactions.</Card.Text>
         </Card>
       </Col>
       <Col md={4}>
