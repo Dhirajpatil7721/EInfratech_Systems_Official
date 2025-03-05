@@ -50,10 +50,10 @@ function Education() {
                   <i className="bi bi-people-fill"></i>
                   <span>Collaborative Learning Platforms</span>
                 </div>
-                {/* <div className="feature-item">
+                 <div className="feature-item">
                   <i className="bi bi-graph-up-arrow"></i>
                   <span>Data-driven Insights & Analytics</span>
-                </div> */}
+                </div> 
               </div>
             </div>
           </div>
