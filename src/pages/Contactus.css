@@ -1,6 +1,5 @@
 .contact {
   padding: 60px 40px; /* Added left & right padding only */
-  /* background: linear-gradient(135deg, #e6f0fa 0%, #dbeafe 100%); */
 }
 
 .section-title {
@@ -23,35 +22,32 @@
   color: #3b82f6;
 }
 
-.section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(to right, #007bff, #60a5fa);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-.section-title h2:hover::after {
-  width: 80px;
-}
-
 .section-title p {
   margin-bottom: 0;
   color: #4b5563;
   font-style: italic;
 }
 
+/* Ensure Equal Height for Info Boxes */
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Stretch to equal height */
+  gap: 20px;
+}
+
 .info-item {
   background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  padding: 30px 40px; /* Left & Right padding only */
+  padding: 30px 40px;
   border-radius: 12px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; /* Ensure all items take equal width */
+  text-align: center;
+  min-height: 220px; /* Ensure consistent height */
 }
 
 .info-item i {
@@ -91,7 +87,7 @@
 
 .php-email-form {
   background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  padding: 30px 50px; /* Left & Right padding only */
+  padding: 30px 50px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
@@ -104,7 +100,7 @@
 
 .form-control {
   border-radius: 6px;
-  padding: 12px 20px; /* Left & Right padding only */
+  padding: 12px 20px;
   margin-bottom: 15px;
   border: 1px solid #d1d5db;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -161,10 +157,16 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 
+/* Remove Extra Space at Bottom */
+.contact {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 991px) {
   .contact {
-    padding: 60px 30px; /* Reduced left & right padding */
+    padding: 60px 30px;
   }
   .php-email-form {
     padding: 30px;
@@ -187,6 +189,10 @@ textarea.form-control {
   }
   .info-item {
     padding: 20px 25px;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -51,7 +51,7 @@ const Contactus = () => {
   };
     return (
         <div>
-            <section id="contact" className="contact section mt-5">
+            <section id="contact" className="contact section ">
                 {/* Section Title */}
                 <div className="container section-title" data-aos="fade-up">
                     <h2>Contact Us </h2>

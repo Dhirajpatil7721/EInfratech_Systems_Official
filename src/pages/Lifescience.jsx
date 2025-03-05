@@ -1,15 +1,15 @@
 import React from "react";
 
 
-function  LifeScience1() {
+function LifeScience1() {
   return (
     <>
       <div>
 
         {/* Page Title */}
         <div className="page-title"
-          style={{ backgroundImage: ` url('https://img.freepik.com/free-vector/gradient-world-science-day-background_52683-97461.jpg?t=st=1740826001~exp=1740829601~hmac=64f5330c5fe51b4e56825b74cc48a1197b4c6ce78947907dabc9e0fd78a6298c&w=1380')`, backgroundSize: 'cover', height: '45vh' }}>
-          <div className="container text-center mt-2">
+          style={{ backgroundImage: ` url('https://img.freepik.com/free-vector/gradient-world-science-day-background_52683-97461.jpg?t=st=1740826001~exp=1740829601~hmac=64f5330c5fe51b4e56825b74cc48a1197b4c6ce78947907dabc9e0fd78a6298c&w=1380')`, backgroundSize: 'cover', height: '50vh' }}>
+          <div className="container text-center mt-5">
             <h1 data-aos="fade-down" style={{ color: "white" }}>Connected Workplace for Life Sciences</h1>
             <p data-aos="fade-up" className="text-light">
               Optimize lab &amp; facility management with cutting-edge solutions.
@@ -19,70 +19,46 @@ function  LifeScience1() {
         </div>
         {/* Main Content */}
 
-        <section className=" service-details container my-3">
-          <div className="row align-items-center mb-5">
-            {/* Image Section */}
-            <div className="col-md-6 text-center">
-              <img
+        <section className=" service-details container">
+       <div className="row align-items-center">
+        <div className="col-md-6 text-center">
+        <img
                 src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600" // Replace with actual image path
                 alt="Team Discussion"
                 className="img-fluid rounded shadow-lg"
-                style={{ height: '50vh' }}
+                style={{ height: '40vh' }}
               // style={{height: '55%'}}
               />
-            </div>
-
-            {/* Text Section */}
-            <div className="col-md-6 px-5">
-              <div className="service-section mb-1 mt-3" data-aos="fade-up">
-                <h3><i className="bi bi-heart-pulse" /> Keep Your Operations Running Smoothly</h3>
+        </div>
+        <div className="col-md-6 mt-3 px-3 " data-aos="fade-up">
+        <h3><i className="bi bi-heart-pulse" /> Keep Your Operations Running Smoothly</h3>
                 <div className="text-start">
-                  <p style={{    paddingright: "0rem !important",paddingleft: "1rem !important"}}>
-                  Bringing life-saving therapies to market involves complex processes, requiring seamless facility and lab management. Your software should simplify operations, ensuring efficiency, compliance, and streamlined workflows. Instead of adding complications, it should enhance productivity, optimize resources, and support innovation for faster, more effective delivery of critical treatments.
+                  <p>
+                    Bringing life-saving therapies to market is complex. Your software should simplify—not complicate—facility and lab management.
                   </p>
                   <ul className="list-unstyled">
                     <li><i className="bi bi-cpu" /> <strong>GxP & Non-GxP Asset Management</strong></li>
                     <li><i className="bi bi-building" /> <strong>Real Estate & Space Planning</strong></li>
                     <li><i className="bi bi-diagram-3" /> <strong>Capital Planning & Projects</strong></li>
                   </ul>
-                </div>
+                  </div>
+        </div>
+       </div>
 
-              </div>
-            </div>
-          </div>
-
-          <div className="row align-items-center mt-4">
-            {/* Image Section */}
-            <div className="col-md-6 text-center px-3">
-              {/* <div className="service-section mb-5 ms-5" data-aos="fade-up">
-           <h3><i className="bi bi-sliders" /> Simplify Your Workplace</h3>
-           <div className="text-start">
-            <p>
-              Manage all facility and lab operations seamlessly with a <strong>single platform</strong>.
-            </p>
-            <ul className="list-unstyled">
-              <li><i className="bi bi-people" /> <strong>Break Down Silos:</strong> Foster cross-team collaboration.</li>
-              <li><i className="bi bi-gear-wide" /> <strong>Optimize Operations:</strong> Automate workflows & data integration.</li>
-              <li><i className="bi bi-check-circle" /> <strong>Be Always Audit-Ready:</strong> Maintain regulatory compliance.</li>
-            </ul>
-          </div>
-          
-        </div> */}
-              <img
+       <div className="row align-items-center mt-5">
+        <div className="col-md-6 text-center">
+        <img
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D" // Replace with actual image path
                 alt="Team Discussion"
                 className="img-fluid rounded shadow-lg"
-                style={{ height: '50vh',marginTop:"75px" }}
+                style={{ height: '40vh' }}
               />
-            </div>
-
-            {/* Text Section */}
-            <div className="col-md-6 px-3 ">
-              <div className="service-section ms-4 " data-aos="fade-up">
-                <h3><i className="bi bi-sliders" /> Simplify Your Workplace</h3>
+        </div>
+        <div className="col-md-6 mt-3 px-3 " data-aos="fade-up">
+        <h3><i className="bi bi-sliders" /> Simplify Your Workplace</h3>
                 <div className="text-start">
-                  <p style={{    paddingright: "0rem !important",paddingleft: "1rem !important"}}>
-                  Effortlessly manage all facility and lab operations with a unified platform that streamlines workflows, enhances efficiency, and ensures compliance. Simplify resource allocation, maintenance, and data management while improving collaboration and productivity. Gain real-time insights and control to optimize facility and lab performance with a single, integrated solution.
+                  <p>
+                    Manage all facility and lab operations seamlessly with a <strong>single platform</strong>.
                   </p>
                   <ul className="list-unstyled">
                     <li><i className="bi bi-people" /> <strong>Break Down Silos</strong></li>
@@ -90,17 +66,9 @@ function  LifeScience1() {
                     <li><i className="bi bi-check-circle" /> <strong>Be Always Audit-Ready</strong></li>
                   </ul>
                 </div>
-
-              </div>
-              {/* <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D" // Replace with actual image path
-            alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
-            style={{height: '40vh'}}
-          /> */}
-            </div>
-          </div>
-        </section>
+        </div>
+       </div>
+    </section>
 
         {/* Explore Life Sciences Solutions (Now Below the Main Content) */}
         <section className="explore-solutions py-2">

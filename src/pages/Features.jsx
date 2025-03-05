@@ -20,7 +20,7 @@ function Features() {
 
                 <section id="features" className="features fsection  fcustom fcustom" >
                     <div className="container">
-                        <div id="grid" className="row gx-4 gy-3 align-items-center px-5">
+                        <div id="grid" className="row gx-5 gy-3 align-items-center px-5">
 
 
                             <div className="col-lg-7 col-md-6 d-flex align-items-center flex-column" style={{ minHeight: "400px" }}>
@@ -101,9 +101,9 @@ function Features() {
                             <div className="col-lg-6 col-md-12 text-lg-start text-center " data-aos="fade-up" data-aos-delay="200">
                                 <div className="content px-3" style={{ maxWidth: "100%" }}>
                                     <h3 className="">Enhancing Workplace Efficiency with Innovation</h3>
-                                    <p style={{ fontSize: "16px", letterSpacing: "-0.1px", lineHeight: "1.5rem" }}>
+                                    <p style={{ fontSize: "16px", letterSpacing: "-1px", lineHeight: "1.5rem" }}>
                                         Optimize your workplace with cutting-edge  and a seamless integration.
-                                        Our solutions help in businesses streamline operations, reduce costs, and improve productivity.
+                                        Our solutions help in businesses streamline operations, reduce costs,  improve productivity.
                                         Experience smarter way to manage your facilities with real-time insights and automation.
                                         The integration of technology, a creative problem-solving strategies, and a culture of continuous improvement
                                         leads to higher productivity, reduced costs, and enhanced employee satisfaction.
@@ -134,17 +134,17 @@ function Features() {
                             <div className="col-lg-6 col-md-12 text-lg-start text-center order-lg-1 order-2" data-aos="fade-up" data-aos-delay="100">
                                 <div className="content px-3" style={{ maxWidth: "100%" }}>
                                     <h3 className="" >Smart Workplace Solutions for Enhanced Efficiency</h3>
-                                    <p className="" style={{ fontSize: "16px", letterSpacing: "-0.1px", lineHeight: "1.5rem" }}>
+                                    <p className="" style={{ fontSize: "16px", letterSpacing: "-1px", lineHeight: "1.5rem" }}>
                                         Leverage advanced technology to transform your workplace.
                                         Our innovative solutions provide real-time insights,and a enhance
                                         operational efficiency, also and reduce costs. Automate the processes,
-                                        improve decision-making, and to create a moreproductive work environment.Gain instant access to crucial data. The integration of
+                                        improve decision-making, and to create a moreproductive .Gain instant access to crucial data. The integration of
                                         the technology, creative and problem-solving strategies, and a culture
                                         of continuous improvement can lead to higher productivity,
                                         reduced, enhanced an employee satisfaction.
                                         Automate  processes,
-                                        improve decision-making,  create a moreproductive work environment.Gain instant access to crucial data. Automate the processes,
-                                        improve decision-making, and to create a moreproductive work environment.Gain instant access to crucial data. 
+                                        improve decision-making,  create a moreproductive.Gain instant access to crucial data. Automate the processes,
+                                        improve decision-making, and to create a moreproductive  environment.Gain instant access to crucial data. 
                                     </p>
                                     {/* <a href="#" style={{ marginTop: "20px" }} className="btn btn-primary text-white px-4 py-2 ">
                                         Discover More

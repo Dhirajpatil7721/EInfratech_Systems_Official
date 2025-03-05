@@ -47,15 +47,6 @@
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.offices-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto; 
-  padding: 0 10px;
-  transform: translateX(0); 
-}
 
 .about-us-content-container p {
   font-size: 1.4em;
@@ -204,12 +195,14 @@
 
 .offices-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts dynamically */
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto; 
-  padding: 0 10px;
-  transform: translateX(0); 
+  max-width: 1000px; /* Ensures it doesn't stretch too wide */
+  width: 100%;
+  justify-content: center; /* Centers the grid */
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto; /* Ensures proper centering */
 }
 
 .office-card {

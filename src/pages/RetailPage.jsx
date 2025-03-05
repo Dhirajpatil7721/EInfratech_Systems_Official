@@ -183,7 +183,7 @@ const RetailPage = () => {
             <FaCashRegister size={42} />
           </div>
           <Card.Title className="fw-bold">POS System</Card.Title>
-          <Card.Text className="text-secondary">Modernize point-of-sale systems for seamless and efficient transactions with advanced technology.</Card.Text>
+          <Card.Text className="text-secondary">Modernize point-of-sale systems for seamless and efficient transactions.</Card.Text>
         </Card>
       </Col>
       <Col md={4}>
@@ -209,13 +209,16 @@ const RetailPage = () => {
 </section>
 
       {/* Call to Action */}
-      <section className="cta-section text-center py-5 bg-light">
-        <Container>
-          <h2 className="fw-bold">Ready to Transform Your Retail Business?</h2>
-          <p className="lead text-light">Join thousands of businesses using our AI-powered solutions.</p>
-          <Link variant="primary" className="rounded-pill px-4 py-2 btn-pulse" to="/contactus">Contact Us</Link>
-        </Container>
-      </section>
+<section className="cta-section text-center py-4 bg-dark text-white">
+  <Container>
+    <h2 className="fw-bold">Ready to Transform Your Retail Business?</h2>
+    <p className="lead text-light">Join thousands of businesses using our AI-powered solutions.</p>
+    <Link className="btn btn-primary rounded-pill px-4 py-2" to="/contactus">
+      Contact Us
+    </Link>
+  </Container>
+</section>
+
     </div>
   );
 };
