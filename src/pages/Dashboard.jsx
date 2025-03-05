@@ -119,7 +119,7 @@ const Dashboard = () => {
                 </div>
             </div>
             {/* Additional Sections with Light Grey Background */}
-            <div className="container my-5 py-5 bg-light rounded">
+            <div className="container my-5 py-5 bg-white rounded">
                 <div className="row align-items-center mb-4 text-center">
                     <div className="col-md-6">
                         <img src="/public/images/c.jpeg" alt="Facilities Maintenance" className="img-fluid rounded shadow" style={{ maxWidth: "55%", height: "auto" }} />

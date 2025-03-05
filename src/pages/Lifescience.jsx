@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function LifeScience1() {
   return (
     <>
@@ -8,7 +9,7 @@ function LifeScience1() {
         {/* Page Title */}
         <div className="page-title"
           style={{ backgroundImage: ` url('https://img.freepik.com/free-vector/gradient-world-science-day-background_52683-97461.jpg?t=st=1740826001~exp=1740829601~hmac=64f5330c5fe51b4e56825b74cc48a1197b4c6ce78947907dabc9e0fd78a6298c&w=1380')`, backgroundSize: 'cover', height: '45vh' }}>
-          <div className="container text-center">
+          <div className="container text-center mt-5">
             <h1 data-aos="fade-down" style={{ color: "white" }}>Connected Workplace for Life Sciences</h1>
             <p data-aos="fade-up" className="text-light">
               Optimize lab &amp; facility management with cutting-edge solutions.

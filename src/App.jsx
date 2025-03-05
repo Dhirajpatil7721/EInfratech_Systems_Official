@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import NavBar from "./components/Navbar.jsx";
 import Customer from "./pages/Customer.jsx";
 import Services from "./pages/Services.jsx";
@@ -13,7 +13,6 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import Chatbot from "./components/chatbot.jsx";
 import Publicsector from "./pages/Publicsector.jsx";
 import LifeScience from "./pages/Lifescience.jsx";
-import HelthCare from "./pages/Healthcare.jsx";
 import RetailPage from "./pages/RetailPage.jsx";
 import Shedule from "./pages/Shedule.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
@@ -23,7 +22,18 @@ import Professional from "./pages/Professional.jsx";
 function App() {
   return (
     <Router>
-      <NavBar />
+      <MainLayout />
+    </Router>
+  );
+}
+
+function MainLayout() {
+  const location = useLocation();
+  const hideNavFooter = location.pathname === "/signin"; // Hide on SignIn page
+
+  return (
+    <>
+      {!hideNavFooter && <NavBar />}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
@@ -36,17 +46,16 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/publicsector" element={<Publicsector />} />
         <Route path="/lifescience" element={<LifeScience />} />
-        {/* <Route path="/healthcare" element={< HelthCare/>} /> */}
-        <Route path="/retailpage" element={< RetailPage />} />
-        <Route path="/shedule" element={< Shedule />} />
+        <Route path="/retailpage" element={<RetailPage />} />
+        <Route path="/shedule" element={<Shedule />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/education" element={<Education />} />
         <Route path="/professional" element={<Professional />} />
       </Routes>
-      <Chatbot />
-      <Footer />
-
-    </Router>
+      {!hideNavFooter && <Footer />}
+      {!hideNavFooter && <Chatbot />}
+      {/* <Chatbot /> */}
+    </>
   );
 }
 

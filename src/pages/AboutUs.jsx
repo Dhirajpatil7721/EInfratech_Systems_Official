@@ -21,12 +21,13 @@ const AboutUs = () => {
         <Counter />
       </div>
       {/* Our Worldwide Offices Section */}
-      <div className="offices-section">
-        <div className="offices-header-container">
+      <div className="offices-section " >
+        <div className="offices-header-container " >
           <h2 className="offices-header">Our Worldwide Offices</h2>
         </div>
-        <div className="offices-grid">
-          <div className="office-card">
+        {/* style={{marginLeft:"85px"}} */}
+        <div className="offices-grid" >
+          <div className="office-card" >
             <img
               src="./images/usa.jpg" // Your U.S. office image path
               alt="United States Office"

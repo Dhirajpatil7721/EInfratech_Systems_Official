@@ -10,13 +10,13 @@ const Customer = () => {
       transition={{ duration: 0.5 }}
       className="customer-container"
     >
-      <div id="cus" className="content-section mt-5">
+      <div id="cus" className="content-section ">
         <div className="content">
           <h2>Who We Are</h2>
-          <p><strong>Innovating  Future of Workplace Management</strong></p>
-          <p style={{ letterSpacing: "-0.5px" }}>
-            At EInfratech Systems,we specialize in delivering the intelligent,scalable,and secure the workplace management solutions.
-            Our mission is to streamline operations,enhance the efficiency,and drive digital transformation across industries.drive digital transformation across industries
+          <p><strong style={{ fontSize: "18px", letterSpacing: "-0.1px", lineHeight: "1.5rem"}} >Innovating  Future of Workplace Management</strong></p>
+          <p style={{ fontSize: "18px", letterSpacing: "-0.1px", lineHeight: "1.5rem"}}>
+            At EInfratech Systems,we specialize in delivering  intelligent, scalable,  secure workplace management of solutions.
+            Our mission  streamline operations, and  enhance the efficiency, digital   in transformation across industries. An drive digital transformation across industries
           </p>
           <ul>
             <li><strong>Seamless Integration</strong> – Unified platforms for optimized workflows.</li>

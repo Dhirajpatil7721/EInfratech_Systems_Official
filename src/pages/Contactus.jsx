@@ -1,7 +1,54 @@
-import React from 'react';
+import React, {useState}from 'react';
 import './Contactus.css'; // Make sure to create this CSS file
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contactus = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      setLoading(false);
+
+      if (response.ok) {
+        setResponseMessage("Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        toast.success("Your Message Sent Successfully Connect you Shortly");
+      } else {
+        setResponseMessage(data.error || "Something went wrong!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setLoading(false);
+      setResponseMessage("Server error. Please try again later.");
+      toast.error("Error!! Something Went Wrong");
+    }
+  };
     return (
         <div>
             <section id="contact" className="contact section mt-5">
@@ -69,69 +116,71 @@ const Contactus = () => {
                         </div>
 
                         <div className="col-lg-6">
-                            <form
-                                action="forms/contact.php"
-                                method="post"
-                                className="php-email-form"
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                            >
-                                <div className="row gy-4">
-                                    <div className="col-md-6">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            className="form-control"
-                                            placeholder="Your Name"
-                                            required
-                                        />
-                                    </div>
+                        <form onSubmit={handleSubmit} className="php-email-form">
+                <div className="row gy-4">
+                  <div className="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Your Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-                                    <div className="col-md-6">
-                                        <input
-                                            type="email"
-                                            className="form-control"
-                                            name="email"
-                                            placeholder="Your Email"
-                                            required
-                                        />
-                                    </div>
+                  <div className="col-md-6">
+                    <input
+                      type="email"
+                      className="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-                                    <div className="col-md-12">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            name="subject"
-                                            placeholder="Subject"
-                                            required
-                                        />
-                                    </div>
+                  <div className="col-md-12">
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
-                                    <div className="col-md-12">
-                                        <textarea
-                                            className="form-control"
-                                            name="message"
-                                            rows="6"
-                                            placeholder="Message"
-                                            required
-                                        ></textarea>
-                                    </div>
+                  <div className="col-md-12">
+                    <textarea
+                      className="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                    ></textarea>
+                  </div>
 
-                                    <div className="col-md-12 text-center">
-                                        <div className="loading">Loading</div>
-                                        <div className="error-message"></div>
-                                        <div className="sent-message">
-                                            Your message has been sent. Thank you!
-                                        </div>
-                                        <button type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
+                  <div className="col-md-12 text-center">
+                    {loading ? <div className="loading">Sending...</div> : ""}
+                    {responseMessage && <div className="sent-message">{responseMessage}</div>}
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
                         </div>
                     </div>
+        
                 </div>
             </section>
+            <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
         </div>
+        
     );
 };
 

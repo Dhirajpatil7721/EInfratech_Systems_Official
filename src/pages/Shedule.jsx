@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { Container, Form, Button, Row, Col, Alert, Spinner } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Schedul = () => {
@@ -13,21 +13,62 @@ const Schedul = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({ type: "", message: "" });
+
+  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  // Handle form submit
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Demo scheduled successfully!");
-    console.log("Form Data:", formData);
+    setLoading(true);
+    setAlert({ type: "", message: "" });
+  
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/schedule", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+  
+      const text = await response.text();  // Read response as text
+      console.log("Raw API Response:", text);
+  
+      try {
+        const data = JSON.parse(text);  // Try parsing JSON
+        if (response.ok) {
+          setAlert({ type: "success", message: data.message || "Demo scheduled successfully!" });
+          setFormData({ name: "", email: "", phone: "", company: "", date: "", time: "", message: "" });
+        } else {
+          setAlert({ type: "danger", message: data.error || "Failed to schedule demo. Please try again." });
+        }
+      } catch (jsonError) {
+        console.error("Invalid JSON Response:", jsonError);
+        setAlert({ type: "danger", message: "Server error: Unexpected response format." });
+      }
+    } catch (error) {
+      console.error("Request Error:", error);
+      setAlert({ type: "danger", message: "Network error. Please try again." });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <Container className="mt-8 mb-5">
+    <Container className="mt-5 mb-5">
       <Row className="justify-content-center">
         <Col md={6}>
           <h2 className="text-center mb-4">Schedule a Demo</h2>
+          
+          {alert.message && (
+            <Alert variant={alert.type} className="text-center">
+              {alert.message}
+            </Alert>
+          )}
+
           <Form onSubmit={handleSubmit} className="shadow p-4 rounded bg-white">
             <Form.Group className="mb-3">
               <Form.Label>Name</Form.Label>
@@ -115,8 +156,15 @@ const Schedul = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="w-100">
-              Schedule Demo
+            <Button variant="primary" type="submit" className="w-100" disabled={loading}>
+              {loading ? (
+                <>
+                  <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" />
+                  {" "} Scheduling...
+                </>
+              ) : (
+                "Schedule Demo"
+              )}
             </Button>
           </Form>
         </Col>

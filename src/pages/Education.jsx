@@ -34,9 +34,9 @@ function Education() {
                 <i className="bi bi-mortarboard me-2 "></i>
                 Enhance Learning Experiences
               </h2>
-              <p className="lead mb-3 px-4">
+              {/* <p className="lead mb-3 px-4">
                 Facilitate seamless learning with smart, connected educational tools.
-              </p>
+              </p> */}
               <div className="features-list px-4">
                 <div className="feature-item">
                   <i className="bi bi-cloud-fill"></i>
@@ -50,10 +50,10 @@ function Education() {
                   <i className="bi bi-people-fill"></i>
                   <span>Collaborative Learning Platforms</span>
                 </div>
-                <div className="feature-item">
+                {/* <div className="feature-item">
                   <i className="bi bi-graph-up-arrow"></i>
                   <span>Data-driven Insights & Analytics</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ function Education() {
           <p data-aos="fade-up" className="mb-3">
             Let us help you implement innovative digital solutions for your learning environment.
           </p>
-          <a href="/contact" className="btn btn-primary btn-lg">Contact Us Today</a>
+          <a href="/contactus" className="btn btn-primary btn-lg">Contact Us Today</a>
         </div>
       </section>
     </div>

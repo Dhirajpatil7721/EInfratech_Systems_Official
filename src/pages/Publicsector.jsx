@@ -6,9 +6,9 @@ function Publicsector() {
         <div>
   {/* Page Title */}
   <div className="page-title"
-  style={{ backgroundImage: `url('https://img.freepik.com/free-photo/abstract-business-people-city-buildings_53876-139657.jpg?t=st=1740831517~exp=1740835117~hmac=46f0ec993c51c2d61938882897c7edbada801f28c649b5d976e72a52fb95aa4d&w=1480')`, backgroundSize: 'cover', height: '45vh' }}>
+  style={{ backgroundImage: `url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  ')`, backgroundSize: 'cover', height: '45vh' }}>
     <div className="container text-center">
-      <h1 data-aos="fade-down" className="text-light" >Connected Workplace for Public Sector</h1>
+      <h1 data-aos="fade-down" className="text-light mt-4" >Connected Workplace for Public Sector</h1>
       <p data-aos="fade-up"className="text-white fw-bold fs-5">
         Drive digital transformation across government agencies &amp;
         institutions.
@@ -205,27 +205,27 @@ function Publicsector() {
             <h3 className="text-center">Implementation Partners</h3>
 
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-1.png" className="img-fluid" alt />
+            <img src="images/client-1.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-2.png" className="img-fluid" alt />
+            <img src="/images/client-2.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-3.png" className="img-fluid" alt />
+            <img src="/images/client-3.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-4.png" className="img-fluid" alt />
+            <img src="/images/client-4.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-5.png" className="img-fluid" alt />
+            <img src="/images/client-5.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
           <div className="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="src/assets/img/clients/client-6.png" className="img-fluid" alt />
+            <img src="/images/client-6.png" className="img-fluid" alt />
           </div>
           {/* End Client Item */}
         </div>

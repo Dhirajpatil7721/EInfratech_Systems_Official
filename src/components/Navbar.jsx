@@ -87,6 +87,8 @@ const NavBar = () => {
                   <Dropdown.Menu>
                     <Dropdown.Item as={NavLink} to="/contactus" onClick={() => setShowSidebar(false)}>Contact Us</Dropdown.Item>
                     <Dropdown.Item as={NavLink} to="/about" onClick={() => setShowSidebar(false)}>About Us</Dropdown.Item>
+                    <Dropdown.Item as={NavLink} to="/professional" onClick={() => setShowSidebar(false)}>Professional Services</Dropdown.Item>
+
 
 
                   </Dropdown.Menu>

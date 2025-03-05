@@ -19,10 +19,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <span className="social-icon linkedin">in</span>
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-              <span className="social-icon youtube ">▶</span>
-              {/* <span className=" youtube "><img src="/public/images/youtub'.png" style={{width: "110%"}} alt="" /></span> */}
-            </a>
+            
           </div>
         </div>
 

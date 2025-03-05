@@ -3,7 +3,7 @@ import "./Services.css";
 
 const Services = () => {
     return (
-        <section className="services section  mt-5">
+        <section className="services section ">
             {/* Section Title */}
             <div className="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
@@ -20,9 +20,9 @@ const Services = () => {
                                 <div className="service-content">
                                     <h3 className="text-center">{service.title}</h3>
                                     <p>{service.description}</p>
-                                    <a href="#" className="read-more stretched-link">
+                                    {/* <a href="#" className="read-more stretched-link">
                                         Learn More <i className="bi bi-arrow-right" />
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         </div>
