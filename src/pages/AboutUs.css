@@ -47,6 +47,15 @@
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 10px;
+  transform: translateX(0); 
+}
 
 .about-us-content-container p {
   font-size: 1.4em;
@@ -198,8 +207,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin-left: 170px; 
-  padding:  10px;
+  margin: 0 auto; 
+  padding: 0 10px;
   transform: translateX(0); 
 }
 

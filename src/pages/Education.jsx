@@ -1,5 +1,6 @@
 import React from "react";
 import "./Education.css";
+import { Link } from "react-router-dom";
 
 function Education() {
   return (
@@ -11,7 +12,8 @@ function Education() {
           <p data-aos="fade-up" className="mt-2">
             Transform education with innovative digital solutions for institutions & learners.
           </p>
-          <a href="/schedule" className="btn btn-primary mt-3">Schedule a Demo</a>
+          {/* <Link to="/shedule" className="btn btn-primary mt-3">Schedule a Demo</Link> */}
+          <a href="shedule" className="btn btn-primary mt-3 btn-animate">Schedule a Demo</a>
         </div>
       </div>
       
