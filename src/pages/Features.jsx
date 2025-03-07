@@ -72,13 +72,23 @@ function Features() {
                             <div className="col-lg-5 col-md-6">
                                 <div className="tab-content img-hover-zoom ms-4" data-aos="fade-up" data-aos-delay="200">
                                     <div className="tab-pane fade active show" id="features-tab-1">
-                                        <img src="/images/tabs-1.jpg" alt="" className="img-fluid img-rounded" />
+                                        <img
+                                            src="/images/tabs-1.jpg" alt="" className="img-fluid rounded shadow-lg center-image"
+                                            style={{ width: '150%', marginLeft: 'auto', marginRight: 'auto', display: 'block' }}
+                                        />
                                     </div>
                                     <div className="tab-pane fade" id="features-tab-2">
-                                        <img src="/images/tabs-2.jpg" alt="" className="img-fluid img-rounded" />
+                                        <img src="/images/tabs-2.jpg" alt="" className="img-fluid rounded shadow-lg center-image"
+                                            style={{ width: '150%', marginLeft: 'auto', marginRight: 'auto', display: 'block' }}
+                                        />
                                     </div>
                                     <div className="tab-pane fade" id="features-tab-3">
-                                        <img src="/images/tabs-3.jpg" alt="" className="img-fluid img-rounded" />
+                                        <img src="/images/tabs-3.jpg" alt="" className="img-fluid rounded shadow-lg center-image" style={{ width: '150%', marginLeft: 'auto', marginRight: 'auto', display: 'block' }}
+                                        />
+                                    </div>
+                                    <div className="tab-pane fade" id="features-tab-4">
+                                        <img src="/images/tabs-4.jpg" alt="" className="img-fluid rounded shadow-lg center-image" style={{ width: '150%', marginLeft: 'auto', marginRight: 'auto', display: 'block' }}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +103,13 @@ function Features() {
                         <div className="row align-items-center gy-4">
 
                             <div className="col-lg-6 col-md-12 text-center img-hover-zoom " data-aos="fade-up" data-aos-delay="100">
-                                <img src="/images/features-1.jpg" className="img-fluid rounded shadow-lg ms-3" alt="Feature 1" style={{ maxWidth: "90%", height: "auto" }} />
+                                <img
+                                    src="/images/f5.jpg"
+                                    className="img-fluid rounded shadow-lg ms-2"
+                                    alt="Feature 1"
+                                    style={{ width: '95%', height: '200%', marginLeft: '20px', marginRight: 'auto', display: 'block' }}
+                                />
+
                             </div>
 
 
@@ -109,7 +125,7 @@ function Features() {
                                         leads to higher productivity, reduced costs, and enhanced employee satisfaction.
                                         Leveraging  a cutting-edge technology and seamless integration transforms business operations,
                                         making processes more streamlined, cost-effective, a productive.
-                                        Experience smarter way to manage your facilities with real-time insights and automation. Experience smarter way to manage your facilities with real-time insights and automation.  Experience smarter way to manage your facilities with real-time insights and automation. 
+                                        Experience smarter way to manage your facilities with real-time insights and automation. Experience smarter way to manage your facilities with real-time insights and automation.  Experience smarter way to manage your facilities with real-time insights and automation.
                                         Optimize your workplace with cutting-edge  and a seamless integration.
                                     </p>
 
@@ -144,7 +160,7 @@ function Features() {
                                         reduced, enhanced an employee satisfaction.
                                         Automate  processes,
                                         improve decision-making,  create a moreproductive.Gain instant access to crucial data. Automate the processes,
-                                        improve decision-making, and to create a moreproductive  environment.Gain instant access to crucial data. 
+                                        improve decision-making, and to create a moreproductive  environment.Gain instant access to crucial data.
                                     </p>
                                     {/* <a href="#" style={{ marginTop: "20px" }} className="btn btn-primary text-white px-4 py-2 ">
                                         Discover More
@@ -152,10 +168,21 @@ function Features() {
                                 </div>
                             </div>
 
-
                             <div className="col-lg-6 col-md-12 text-center order-lg-2 order-1 img-hover-zoom" data-aos="fade-up" data-aos-delay="200">
-                                <img src="/images/features-2.jpg" className="img-fluid rounded shadow-lg ms-3" alt="Feature 2" style={{ width: "90%", height: "80%" }} />
+                                <img
+                                    src="/images/f3.jpg"
+                                    className="img-fluid rounded shadow-lg center-image"
+                                    alt="Feature 2"
+                                    style={{
+                                        width: "90%",
+                                        height: "80%",
+                                        marginTop: '20px',
+                                        marginBottom: '10px',  // Reduced bottom margin to balance the space
+                                        boxShadow: '0px 2px 6px rgba(0, 0, 0, 0.1)' // Smaller bottom shadow with a reduced spread
+                                    }}
+                                />
                             </div>
+
                         </div>
                     </div>
                 </section>

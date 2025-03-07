@@ -1,7 +1,7 @@
-.fcustom{
-    /* background-color: rgba(207, 203, 203, 0.274); */
+.fcustom {
     padding: 10px 0;
 }
+
 #febg {
     background: linear-gradient(180deg, #2C3E50, #4A6076, #dee2e6),
         repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 10px, transparent 10px, transparent 20px);
@@ -23,14 +23,19 @@
     border-radius: inherit;
 }
 
+/* Align the first image by adjusting width and position */
+#febg .img-hover-zoom .tab-pane img:first-child {
+    width: 100%; /* Increase the width of the first image */
+    margin-left: 10px; /* Adjust left margin to align with the second image */
+}
+
 /* .img-hover-zoom:hover img {
     transform: scale(1.1);
 } */
+
 .content p {
     text-align: justify;
 }
-
-
 
 .img-rounded,
 #img {
@@ -48,6 +53,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobile device-specific styles */
 @media (max-width: 900px) {
     .mobile-image {
         width: 40%;
